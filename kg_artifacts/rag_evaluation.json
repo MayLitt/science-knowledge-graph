@@ -1,0 +1,58 @@
+[
+  {
+    "question": "Where was Galileo born?",
+    "expected": [
+      "pisa",
+      "florence"
+    ],
+    "got": "Pisa",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "Who influenced Aristotle?",
+    "expected": [
+      "plato",
+      "socrates"
+    ],
+    "got": "the European Renaissance, Plato, the medieval period, Thomas Aquinas, Isaac Newton",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "Where did Newton study?",
+    "expected": [
+      "cambridge"
+    ],
+    "got": "University of Cambridge",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "What is Galileo known for?",
+    "expected": [
+      "astronomy",
+      "physics",
+      "dialogue"
+    ],
+    "got": "astronomy, Galileo Medal",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "Which scientists shared the same institution?",
+    "expected": [
+      "locke",
+      "hooke",
+      "newton"
+    ],
+    "got": "Rochester High School | Bachelor of Science, Luis | Bachelor of Science, the University of Chicago | Bachelor of Science, Aristotle | Plato, Rochester High School | Luis",
+    "match": false,
+    "attempts": 1,
+    "repaired": false
+  }
+]

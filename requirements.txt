@@ -1,0 +1,29 @@
+# ── Web crawling & text extraction ──────────────────────────
+requests>=2.32.0
+trafilatura>=1.12.0
+
+# ── NLP & NER ────────────────────────────────────────────────
+spacy>=3.7.0
+# After install, run: python -m spacy download en_core_web_trf
+
+# ── Data manipulation ────────────────────────────────────────
+pandas>=2.2.0
+numpy>=1.26.0
+
+# ── RDF / Knowledge Graph ────────────────────────────────────
+rdflib>=7.0.0
+
+# ── OWL Reasoning (SWRL) ─────────────────────────────────────
+owlready2>=0.46
+
+# ── Knowledge Graph Embeddings ───────────────────────────────
+pykeen>=1.10.0
+torch>=2.0.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+scipy>=1.12.0
+tqdm>=4.66.0
+
+# ── RAG / LLM interface ──────────────────────────────────────
+# Ollama must be installed separately: https://ollama.com/download
+# After install, run: ollama pull llama3.2

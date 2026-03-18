@@ -1,0 +1,24 @@
+
+=== Rapport de comparaison KGE ===
+
+Dataset
+  Triplets total  : 404
+  Train           : 323
+  Valid           : 30
+  Test            : 32
+
+Configuration
+  Embedding dim   : 50
+  Epochs          : 100
+  Batch size      : 16
+  Learning rate   : 0.01
+
+Résultats
+  Modèle       MRR      Hits@1   Hits@3   Hits@10
+  ───────────────────────────────────────────────────────
+  TransE       0.0000   0.0000   0.0000   0.0000
+  RotatE       0.0000   0.0000   0.0000   0.0000
+
+Note : KB de petite taille (404 triplets vs 50k-200k recommandés).
+Les métriques sont instables et doivent être interprétées avec précaution.
+Ce résultat est discuté dans la section Critical Reflection du rapport.

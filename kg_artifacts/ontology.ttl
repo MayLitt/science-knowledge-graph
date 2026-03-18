@@ -1,0 +1,167 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix schema: <https://schema.org/> .
+
+# ─────────────────────────────────────────
+#  Ontology declaration
+# ─────────────────────────────────────────
+
+ex:ScientistsKG a owl:Ontology ;
+    rdfs:label "Scientists Knowledge Graph Ontology" ;
+    rdfs:comment "Ontology for a knowledge graph about famous scientists, their lives, works and relations." .
+
+# ─────────────────────────────────────────
+#  Classes
+# ─────────────────────────────────────────
+
+ex:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A human being, typically a scientist or historical figure." ;
+    owl:equivalentClass dbo:Person .
+
+ex:Scientist a owl:Class ;
+    rdfs:label "Scientist" ;
+    rdfs:subClassOf ex:Person ;
+    rdfs:comment "A person who studies or practises science." ;
+    owl:equivalentClass dbo:Scientist .
+
+ex:Place a owl:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A geographic location such as a city or country." ;
+    owl:equivalentClass dbo:Place .
+
+ex:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "An institution, university, academy or other organisation." ;
+    owl:equivalentClass dbo:Organisation .
+
+ex:Work a owl:Class ;
+    rdfs:label "Work" ;
+    rdfs:comment "A scientific, philosophical or literary work." ;
+    owl:equivalentClass dbo:Work .
+
+ex:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "A notable historical or scientific event." ;
+    owl:equivalentClass dbo:Event .
+
+# ─────────────────────────────────────────
+#  Object Properties
+# ─────────────────────────────────────────
+
+ex:bornIn a owl:ObjectProperty ;
+    rdfs:label "born in" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Place ;
+    rdfs:comment "The place where a person was born." ;
+    owl:equivalentProperty dbo:birthPlace ;
+    rdfs:subPropertyOf schema:birthPlace .
+
+ex:diedIn a owl:ObjectProperty ;
+    rdfs:label "died in" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Place ;
+    rdfs:comment "The place where a person died." ;
+    owl:equivalentProperty dbo:deathPlace .
+
+ex:studiedAt a owl:ObjectProperty ;
+    rdfs:label "studied at" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Organization ;
+    rdfs:comment "An institution where a person studied." ;
+    owl:equivalentProperty dbo:almaMater .
+
+ex:workedAt a owl:ObjectProperty ;
+    rdfs:label "worked at" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Organization ;
+    rdfs:comment "An institution where a person worked." ;
+    owl:equivalentProperty dbo:employer .
+
+ex:collaboratedWith a owl:ObjectProperty ;
+    rdfs:label "collaborated with" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Person ;
+    rdfs:comment "A person with whom another person collaborated." ;
+    owl:equivalentProperty dbo:associatedMusician ;
+    owl:symmetricProperty true .
+
+ex:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influenced by" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Person ;
+    rdfs:comment "A person or idea that influenced this person." ;
+    owl:equivalentProperty dbo:influencedBy .
+
+ex:influenced a owl:ObjectProperty ;
+    rdfs:label "influenced" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Person ;
+    rdfs:comment "A person or idea that this person influenced." ;
+    owl:inverseOf ex:influencedBy .
+
+ex:authorOf a owl:ObjectProperty ;
+    rdfs:label "author of" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Work ;
+    rdfs:comment "A work authored by this person." ;
+    owl:equivalentProperty dbo:author .
+
+ex:knownFor a owl:ObjectProperty ;
+    rdfs:label "known for" ;
+    rdfs:domain ex:Person ;
+    rdfs:comment "A discovery, theory or achievement this person is known for." ;
+    owl:equivalentProperty dbo:knownFor .
+
+ex:taughtBy a owl:ObjectProperty ;
+    rdfs:label "taught by" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Person ;
+    rdfs:comment "A person who taught this person." .
+
+ex:taught a owl:ObjectProperty ;
+    rdfs:label "taught" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Person ;
+    rdfs:comment "A person taught by this person." ;
+    owl:inverseOf ex:taughtBy .
+
+ex:memberOf a owl:ObjectProperty ;
+    rdfs:label "member of" ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Organization ;
+    rdfs:comment "An organisation of which this person is or was a member." ;
+    owl:equivalentProperty dbo:militaryBranch .
+
+ex:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in" ;
+    rdfs:domain ex:Organization ;
+    rdfs:range ex:Place ;
+    rdfs:comment "The place where an organisation is located." ;
+    owl:equivalentProperty dbo:location .
+
+# ─────────────────────────────────────────
+#  Datatype Properties
+# ─────────────────────────────────────────
+
+ex:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birth date" ;
+    rdfs:domain ex:Person ;
+    rdfs:range xsd:date ;
+    owl:equivalentProperty dbo:birthDate ;
+    rdfs:subPropertyOf schema:birthDate .
+
+ex:deathDate a owl:DatatypeProperty ;
+    rdfs:label "death date" ;
+    rdfs:domain ex:Person ;
+    rdfs:range xsd:date ;
+    owl:equivalentProperty dbo:deathDate .
+
+ex:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:domain ex:Person ;
+    rdfs:range xsd:string .

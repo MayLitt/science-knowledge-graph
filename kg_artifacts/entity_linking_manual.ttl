@@ -1,0 +1,10 @@
+@prefix ex: <http://example.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:Aristotle owl:sameAs wd:Q868 .
+ex:Plato owl:sameAs wd:Q859 .
+ex:Socrates owl:sameAs wd:Q913 .
+ex:Galileo owl:sameAs wd:Q307 .
+ex:Isaac_Newton owl:sameAs wd:Q935 .
+ex:Luis_Alvarez_s owl:sameAs wd:Q92935 .

@@ -1,0 +1,22 @@
+{
+  "model": "RotatE",
+  "config": {
+    "embedding_dim": 50,
+    "epochs": 100,
+    "batch_size": 16,
+    "lr": 0.01
+  },
+  "metrics": {
+    "MRR": 0,
+    "Hits@1": 0,
+    "Hits@3": 0,
+    "Hits@10": 0
+  },
+  "dataset": {
+    "entities": 208,
+    "relations": 52,
+    "train": 323,
+    "valid": 28,
+    "test": 31
+  }
+}

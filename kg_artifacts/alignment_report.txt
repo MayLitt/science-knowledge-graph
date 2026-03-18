@@ -1,0 +1,88 @@
+=== Rapport d'alignement des prédicats ===
+
+Triplets initiaux  : 330
+Triplets alignés   : 164
+Triplets conservés : 308
+Triplets supprimés : 22
+
+ALIGNED  [55%]  come            → workedAt
+ALIGNED  [55%]  represent       → collaboratedWith
+ALIGNED  [55%]  return          → workedAt
+ALIGNED  [55%]  tell            → collaboratedWith
+ALIGNED  [60%]  arrive          → workedAt
+ALIGNED  [60%]  form            → memberOf
+ALIGNED  [60%]  talk            → collaboratedWith
+ALIGNED  [65%]  become          → memberOf
+ALIGNED  [65%]  expand          → knownFor
+ALIGNED  [65%]  improve         → authorOf
+ALIGNED  [65%]  spend           → workedAt
+ALIGNED  [70%]  build           → authorOf
+ALIGNED  [70%]  complete        → workedAt
+ALIGNED  [70%]  create          → authorOf
+ALIGNED  [70%]  find            → knownFor
+ALIGNED  [70%]  produce         → authorOf
+ALIGNED  [75%]  detect          → knownFor
+ALIGNED  [75%]  devise          → authorOf
+ALIGNED  [80%]  enrol           → studiedAt
+ALIGNED  [80%]  study           → studiedAt
+ALIGNED  [85%]  elect           → memberOf
+ALIGNED  [85%]  graduate        → studiedAt
+ALIGNED  [85%]  influence       → influencedBy
+ALIGNED  [85%]  teach           → taughtBy
+ALIGNED  [90%]  bear            → bornIn
+ALIGNED  [90%]  die             → diedIn
+ALIGNED  [90%]  write           → authorOf
+DROPPED  [50%]  ask              (confidence trop faible)
+DROPPED  [50%]  go               (confidence trop faible)
+DROPPED  [50%]  leave            (confidence trop faible)
+DROPPED  [50%]  send             (confidence trop faible)
+DROPPED  [50%]  summon           (confidence trop faible)
+KEPT_RAW          apologise        (pas de mapping)
+KEPT_RAW          ban              (pas de mapping)
+KEPT_RAW          begin            (pas de mapping)
+KEPT_RAW          challenge        (pas de mapping)
+KEPT_RAW          change           (pas de mapping)
+KEPT_RAW          claim            (pas de mapping)
+KEPT_RAW          close            (pas de mapping)
+KEPT_RAW          concern          (pas de mapping)
+KEPT_RAW          confront         (pas de mapping)
+KEPT_RAW          convene          (pas de mapping)
+KEPT_RAW          crumble          (pas de mapping)
+KEPT_RAW          decide           (pas de mapping)
+KEPT_RAW          din              (pas de mapping)
+KEPT_RAW          discuss          (pas de mapping)
+KEPT_RAW          enhance          (pas de mapping)
+KEPT_RAW          enter            (pas de mapping)
+KEPT_RAW          exert            (pas de mapping)
+KEPT_RAW          expect           (pas de mapping)
+KEPT_RAW          fight            (pas de mapping)
+KEPT_RAW          give             (pas de mapping)
+KEPT_RAW          hunt             (pas de mapping)
+KEPT_RAW          ignore           (pas de mapping)
+KEPT_RAW          include          (pas de mapping)
+KEPT_RAW          interrupt        (pas de mapping)
+KEPT_RAW          lodge            (pas de mapping)
+KEPT_RAW          mention          (pas de mapping)
+KEPT_RAW          move             (pas de mapping)
+KEPT_RAW          note             (pas de mapping)
+KEPT_RAW          notice           (pas de mapping)
+KEPT_RAW          oppose           (pas de mapping)
+KEPT_RAW          prepare          (pas de mapping)
+KEPT_RAW          put              (pas de mapping)
+KEPT_RAW          quarrel          (pas de mapping)
+KEPT_RAW          reproduce        (pas de mapping)
+KEPT_RAW          save             (pas de mapping)
+KEPT_RAW          see              (pas de mapping)
+KEPT_RAW          seek             (pas de mapping)
+KEPT_RAW          sit              (pas de mapping)
+KEPT_RAW          spirit           (pas de mapping)
+KEPT_RAW          steer            (pas de mapping)
+KEPT_RAW          suffer           (pas de mapping)
+KEPT_RAW          survive          (pas de mapping)
+KEPT_RAW          take             (pas de mapping)
+KEPT_RAW          think            (pas de mapping)
+KEPT_RAW          travel           (pas de mapping)
+KEPT_RAW          try              (pas de mapping)
+KEPT_RAW          turn             (pas de mapping)
+KEPT_RAW          want             (pas de mapping)
+KEPT_RAW          work             (pas de mapping)

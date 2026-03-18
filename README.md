@@ -14,9 +14,10 @@ This project builds a private Knowledge Graph (KG) about famous scientists using
 2. **Information Extraction** — NER (spaCy) + relation extraction
 3. **KB Construction** — RDF graph + OWL ontology (rdflib)
 4. **Alignment** — entity/predicate linking to Wikidata / DBpedia
-5. **Reasoning** — SWRL rules with OWLReady2
-6. **KGE** — Knowledge Graph Embeddings (TransE, RotatE via PyKEEN)
-7. **RAG** — Natural Language → SPARQL with self-repair (Ollama)
+5. **SPARQL Expansion** — enrich KB by querying Wikidata
+6. **Reasoning** — SWRL rules with OWLReady2
+7. **KGE** — Knowledge Graph Embeddings (TransE, RotatE via PyKEEN)
+8. **RAG** — Natural Language → SPARQL with self-repair (Ollama + llama3.2)
 
 ---
 
@@ -26,19 +27,21 @@ This project builds a private Knowledge Graph (KG) about famous scientists using
 science-knowledge-graph/
 ├── src/
 │   ├── crawl/
-│   │   └── crawler.py              # Web scraper (trafilatura)
+│   │   └── crawler.py                  # Web scraper (trafilatura)
 │   ├── ie/
-│   │   ├── extract_entities.py     # NER with spaCy
-│   │   ├── extract_relations.py    # Subject-verb-object extraction
-│   │   └── clean_relations.py      # Relation filtering
+│   │   ├── extract_entities.py         # NER with spaCy (en_core_web_trf)
+│   │   ├── extract_relations.py        # Subject-verb-object extraction
+│   │   └── clean_relations.py          # Relation filtering
 │   ├── kg/
-│   │   └── build_private_kb.py     # RDF graph construction (rdflib)
+│   │   ├── build_private_kb.py         # RDF graph construction (rdflib)
+│   │   ├── align_predicates.py         # Predicate alignment to ontology
+│   │   └── expand_kg.py                # SPARQL expansion via Wikidata
 │   ├── reason/
-│   │   └── swrl_rules.py           # SWRL reasoning (OWLReady2)
+│   │   └── swrl_rules.py               # SWRL reasoning (OWLReady2)
 │   ├── kge/
-│   │   └── train_kge.py            # KGE training (PyKEEN)
+│   │   └── train_kge.py                # KGE training (PyKEEN)
 │   └── rag/
-│       └── rag_pipeline.py         # NL→SPARQL + self-repair (Ollama)
+│       └── rag_pipeline.py             # NL→SPARQL + self-repair (Ollama)
 ├── data/
 │   ├── crawler_output.jsonl
 │   ├── extracted_knowledge.csv
@@ -46,14 +49,24 @@ science-knowledge-graph/
 │   ├── extracted_relations_cleaned.csv
 │   └── README.md
 ├── kg_artifacts/
-│   ├── ontology.ttl
-│   ├── graph.nt
-│   ├── expanded.nt
-│   └── alignment.ttl
+│   ├── ontology.ttl                    # OWL ontology (6 classes, 13 properties)
+│   ├── graph.nt                        # Initial RDF graph (330 triples)
+│   ├── alignment.ttl                   # Entity linking to Wikidata (25 entities)
+│   ├── aligned_kb.nt                   # KB with aligned predicates
+│   ├── expanded.nt                     # KB after Wikidata expansion (478 triples)
+│   ├── expanded_reasoned.nt            # KB after SWRL inference (499 triples)
+│   ├── alignment_report.txt            # Predicate alignment log
+│   ├── expansion_report.txt            # Wikidata expansion log
+│   └── rag_evaluation.json             # RAG evaluation results
 ├── kge_datasets/
-│   ├── train.txt
-│   ├── valid.txt
-│   └── test.txt
+│   ├── train.txt                       # 323 triples
+│   ├── valid.txt                       # 30 triples
+│   ├── test.txt                        # 32 triples
+│   ├── results_TransE.json
+│   ├── results_RotatE.json
+│   ├── tsne_TransE.png
+│   ├── tsne_RotatE.png
+│   └── comparison_report.txt
 ├── reports/
 │   └── final_report.pdf
 ├── notebooks/
@@ -70,7 +83,7 @@ science-knowledge-graph/
 ### Prerequisites
 
 - Python 3.10+
-- [Ollama](https://ollama.com/) (for the RAG module)
+- [Ollama](https://ollama.com/download) (for the RAG module)
 
 ### Setup
 
@@ -79,6 +92,14 @@ git clone https://github.com/<your-username>/science-knowledge-graph.git
 cd science-knowledge-graph
 pip install -r requirements.txt
 python -m spacy download en_core_web_trf
+```
+
+### Ollama setup
+
+```bash
+# Install Ollama from https://ollama.com/download
+# Then pull the model:
+ollama pull llama3.2
 ```
 
 ---
@@ -105,59 +126,61 @@ python src/ie/clean_relations.py
 # Output: data/extracted_relations_cleaned.csv
 ```
 
-### 3. Build Knowledge Graph
+### 3. Build & Align Knowledge Graph
 
 ```bash
 python src/kg/build_private_kb.py
 # Output: kg_artifacts/graph.nt
+
+python src/kg/align_predicates.py
+# Output: kg_artifacts/aligned_kb.nt
+
+python src/kg/expand_kg.py
+# Output: kg_artifacts/expanded.nt
 ```
 
 ### 4. SWRL Reasoning
 
 ```bash
 python src/reason/swrl_rules.py
-# Output: reasoning results in terminal
+# Output: kg_artifacts/expanded_reasoned.nt
 ```
 
 ### 5. KGE Training
 
 ```bash
 python src/kge/train_kge.py
-# Output: kge_datasets/ + evaluation metrics
+# Output: kge_datasets/ (splits, models, t-SNE plots, metrics)
 ```
 
 ### 6. RAG Demo (NL → SPARQL)
 
 ```bash
-# Start Ollama first
-ollama serve
-
-# Run the RAG pipeline
+# Ollama runs automatically in the background after install
+# Interactive mode:
 python src/rag/rag_pipeline.py
+
+# Evaluation mode (5 questions, baseline vs RAG):
+python src/rag/rag_pipeline.py eval
 ```
 
 ---
 
 ## RAG Demo
 
-The RAG pipeline takes a natural language question, generates a SPARQL query using an LLM (via Ollama), executes it against the local RDF graph, and auto-repairs the query if execution fails.
-
-Example:
+The RAG pipeline converts a natural language question into a SPARQL query using llama3.2 via Ollama, executes it against the local RDF graph, and auto-repairs the query if execution fails (up to 3 attempts).
 
 ```
-Question: Who did Galileo collaborate with?
-→ SPARQL generated → executed → result returned
+Question > Where was Galileo born?
+
+SPARQL generated:
+PREFIX ex: <http://example.org/>
+SELECT ?place WHERE { ex:Galileo ex:bornIn ?place }
+
+Answer: Pisa
 ```
 
-A screenshot of the demo is available in `reports/`.
-
----
-
-## Hardware Requirements
-
-- RAM: 8 GB minimum (16 GB recommended for spaCy transformer model)
-- GPU: optional but speeds up KGE training significantly
-- Disk: ~2 GB for model weights (spaCy + Ollama LLM)
+RAG evaluation score: **4/5** questions correctly answered.
 
 ---
 
@@ -166,29 +189,23 @@ A screenshot of the demo is available in `reports/`.
 | Metric | Value |
 |---|---|
 | Source pages crawled | 4 |
-| Entities extracted | TBD |
-| Relations (raw) | TBD |
-| Relations (cleaned) | TBD |
-| RDF triples | TBD |
-
-*To be updated after full pipeline run.*
+| Entities extracted | 241 |
+| Relations (raw) | 408 |
+| Relations (cleaned) | 330 |
+| RDF triples — initial | 330 |
+| RDF triples — after alignment | 307 |
+| RDF triples — after Wikidata expansion | 478 |
+| RDF triples — after SWRL reasoning | 499 |
+| Entities linked to Wikidata | 25 |
+| KGE train / valid / test | 323 / 30 / 32 |
 
 ---
 
-## Requirements
+## Hardware Requirements
 
-See `requirements.txt` for full list. Key dependencies:
-
-```
-rdflib
-spacy
-pandas
-requests
-trafilatura
-owlready2
-pykeen
-ollama
-```
+- RAM: 8 GB minimum (16 GB recommended for spaCy transformer model)
+- GPU: optional but speeds up KGE training
+- Disk: ~4 GB (spaCy model ~500 MB + Ollama llama3.2 ~2 GB)
 
 ---
 

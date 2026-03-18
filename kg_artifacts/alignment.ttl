@@ -1,0 +1,142 @@
+@prefix ex:  <http://example.org/> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix dbo: <http://dbpedia.org/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ─────────────────────────────────────────
+#  Scientists (PERSON)
+# ─────────────────────────────────────────
+
+ex:Aristotle
+    owl:sameAs wd:Q868 ;
+    owl:sameAs dbo:Aristotle ;
+    rdfs:label "Aristotle" .
+
+ex:Plato
+    owl:sameAs wd:Q859 ;
+    owl:sameAs dbo:Plato ;
+    rdfs:label "Plato" .
+
+ex:Socrates
+    owl:sameAs wd:Q913 ;
+    owl:sameAs dbo:Socrates ;
+    rdfs:label "Socrates" .
+
+ex:Galileo
+    owl:sameAs wd:Q307 ;
+    owl:sameAs dbo:Galileo_Galilei ;
+    rdfs:label "Galileo Galilei" .
+
+ex:Isaac_Newton
+    owl:sameAs wd:Q935 ;
+    owl:sameAs dbo:Isaac_Newton ;
+    rdfs:label "Isaac Newton" .
+
+ex:Newton
+    owl:sameAs wd:Q935 ;
+    owl:sameAs dbo:Isaac_Newton ;
+    rdfs:label "Isaac Newton" .
+
+ex:Luis_Alvarez
+    owl:sameAs wd:Q92935 ;
+    owl:sameAs dbo:Luis_Walter_Alvarez ;
+    rdfs:label "Luis Walter Alvarez" .
+
+ex:Alvarez
+    owl:sameAs wd:Q92935 ;
+    owl:sameAs dbo:Luis_Walter_Alvarez ;
+    rdfs:label "Luis Walter Alvarez" .
+
+ex:Luis_Walter_Alvarez
+    owl:sameAs wd:Q92935 ;
+    owl:sameAs dbo:Luis_Walter_Alvarez ;
+    rdfs:label "Luis Walter Alvarez" .
+
+ex:Copernicus
+    owl:sameAs wd:Q619 ;
+    owl:sameAs dbo:Nicolaus_Copernicus ;
+    rdfs:label "Nicolaus Copernicus" .
+
+ex:Robert_Hooke
+    owl:sameAs wd:Q46830 ;
+    owl:sameAs dbo:Robert_Hooke ;
+    rdfs:label "Robert Hooke" .
+
+ex:Hooke
+    owl:sameAs wd:Q46830 ;
+    owl:sameAs dbo:Robert_Hooke ;
+    rdfs:label "Robert Hooke" .
+
+ex:Leibniz
+    owl:sameAs wd:Q9047 ;
+    owl:sameAs dbo:Gottfried_Wilhelm_Leibniz ;
+    rdfs:label "Gottfried Wilhelm Leibniz" .
+
+ex:Alexander_the_Great
+    owl:sameAs wd:Q8409 ;
+    owl:sameAs dbo:Alexander_the_Great ;
+    rdfs:label "Alexander the Great" .
+
+ex:Gottfried_Leibniz
+    owl:sameAs wd:Q9047 ;
+    owl:sameAs dbo:Gottfried_Wilhelm_Leibniz ;
+    rdfs:label "Gottfried Wilhelm Leibniz" .
+
+ex:John_Locke
+    owl:sameAs wd:Q9353 ;
+    owl:sameAs dbo:John_Locke ;
+    rdfs:label "John Locke" .
+
+# ─────────────────────────────────────────
+#  Places (GPE)
+# ─────────────────────────────────────────
+
+ex:Florence
+    owl:sameAs wd:Q2044 ;
+    owl:sameAs dbo:Florence ;
+    rdfs:label "Florence" .
+
+ex:Athens
+    owl:sameAs wd:Q1524 ;
+    owl:sameAs dbo:Athens ;
+    rdfs:label "Athens" .
+
+ex:Rome
+    owl:sameAs wd:Q220 ;
+    owl:sameAs dbo:Rome ;
+    rdfs:label "Rome" .
+
+ex:Cambridge
+    owl:sameAs wd:Q350 ;
+    owl:sameAs dbo:Cambridge ;
+    rdfs:label "Cambridge" .
+
+ex:San_Francisco
+    owl:sameAs wd:Q62 ;
+    owl:sameAs dbo:San_Francisco ;
+    rdfs:label "San Francisco" .
+
+ex:Greece
+    owl:sameAs wd:Q41 ;
+    owl:sameAs dbo:Greece ;
+    rdfs:label "Greece" .
+
+ex:Italy
+    owl:sameAs wd:Q38 ;
+    owl:sameAs dbo:Italy ;
+    rdfs:label "Italy" .
+
+# ─────────────────────────────────────────
+#  Organizations (ORG)
+# ─────────────────────────────────────────
+
+ex:Royal_Society
+    owl:sameAs wd:Q123885 ;
+    owl:sameAs dbo:Royal_Society ;
+    rdfs:label "Royal Society" .
+
+ex:the_Royal_Society
+    owl:sameAs wd:Q123885 ;
+    owl:sameAs dbo:Royal_Society ;
+    rdfs:label "Royal Society" .

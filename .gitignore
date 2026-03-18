@@ -1,0 +1,53 @@
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environments ─────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Data (fichiers lourds) ───────────────────────────────────
+data/crawler_output.jsonl
+data/extracted_relations.csv
+data/extracted_knowledge.csv
+
+# ── KGE models (trop lourds pour GitHub) ─────────────────────
+kge_datasets/TransE/
+kge_datasets/RotatE/
+
+# ── Ollama models ─────────────────────────────────────────────
+*.gguf
+*.bin
+
+# ── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+*.tmp
+
+# ── RDF temporaires ──────────────────────────────────────────
+*.bak.nt
+*.bak.ttl

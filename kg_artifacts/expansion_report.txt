@@ -1,0 +1,162 @@
+
+=== Résumé expansion ===
+Triplets initiaux  : 307
+Triplets ajoutés   : 98
+Triplets finaux    : 478
+Entités enrichies  : 19
+Fichier            : kg_artifacts/expanded.nt
+
+=== Aristotle (wd:Q868) ===
+  + birthDate: -0383-01-01T00:00:00Z
+  + deathDate: -0321-01-01T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q846127
+  + deathPlace: http://www.wikidata.org/entity/Q21235810
+  + studiedAt: http://www.wikidata.org/entity/Q193093
+  + fieldOfWork: http://www.wikidata.org/entity/Q5891
+  + influencedBy: http://www.wikidata.org/entity/Q859
+  + notableWork: http://www.wikidata.org/entity/Q69539
+  → 8 triplets ajoutés
+
+=== Plato (wd:Q859) ===
+  + birthDate: -0428-01-01T00:00:00Z
+  + deathDate: -0348-01-01T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q1524
+  + deathPlace: http://www.wikidata.org/entity/Q1524
+  + fieldOfWork: http://www.wikidata.org/entity/Q316
+  + influencedBy: http://www.wikidata.org/entity/Q913
+  + notableWork: http://www.wikidata.org/entity/Q123397
+  → 7 triplets ajoutés
+
+=== Socrates (wd:Q913) ===
+  + birthDate: -0469-01-01T00:00:00Z
+  + deathDate: -0398-02-10T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q1524
+  + deathPlace: http://www.wikidata.org/entity/Q1524
+  + fieldOfWork: http://www.wikidata.org/entity/Q5891
+  + influencedBy: http://www.wikidata.org/entity/Q83041
+  → 6 triplets ajoutés
+
+=== Galileo (wd:Q307) ===
+  + birthDate: 1564-02-25T00:00:00Z
+  + deathDate: 1642-01-08T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q13375
+  + deathPlace: http://www.wikidata.org/entity/Q2031761
+  + studiedAt: http://www.wikidata.org/entity/Q645663
+  + workedAt: http://www.wikidata.org/entity/Q193510
+  + fieldOfWork: http://www.wikidata.org/entity/Q333
+  + notableWork: http://www.wikidata.org/entity/Q219207
+  + award: http://www.wikidata.org/entity/Q99951011
+  → 9 triplets ajoutés
+
+=== Isaac_Newton (wd:Q935) ===
+  + birthDate: 1643-01-04T00:00:00Z
+  + deathDate: 1727-03-31T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q3316008
+  + deathPlace: http://www.wikidata.org/entity/Q288781
+  + studiedAt: http://www.wikidata.org/entity/Q35794
+  + workedAt: http://www.wikidata.org/entity/Q35794
+  + fieldOfWork: http://www.wikidata.org/entity/Q333
+  + influencedBy: http://www.wikidata.org/entity/Q9191
+  + notableWork: http://www.wikidata.org/entity/Q74263
+  + award: http://www.wikidata.org/entity/Q833163
+  → 10 triplets ajoutés
+
+=== Luis_Alvarez (wd:Q92935) ===
+  + birthDate: 1937-12-21T00:00:00Z
+  + deathDate: 2018-12-26T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q586762
+  + deathPlace: http://www.wikidata.org/entity/Q505549
+  + studiedAt: http://www.wikidata.org/entity/Q49108
+  + workedAt: http://www.wikidata.org/entity/Q3138607
+  + fieldOfWork: http://www.wikidata.org/entity/Q11023
+  + influencedBy: http://www.wikidata.org/entity/Q93038
+  + notableWork: http://www.wikidata.org/entity/Q177524
+  + award: http://www.wikidata.org/entity/Q840924
+  → 10 triplets ajoutés
+
+=== Copernicus (wd:Q619) ===
+  + birthDate: 1473-02-28T00:00:00Z
+  + deathDate: 1543-06-03T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q47554
+  + deathPlace: http://www.wikidata.org/entity/Q497115
+  + studiedAt: http://www.wikidata.org/entity/Q131262
+  + workedAt: http://www.wikidata.org/entity/Q189441
+  + fieldOfWork: http://www.wikidata.org/entity/Q395
+  + influencedBy: http://www.wikidata.org/entity/Q969370
+  + notableWork: http://www.wikidata.org/entity/Q675765
+  + award: http://www.wikidata.org/entity/Q99951011
+  → 10 triplets ajoutés
+
+=== Robert_Hooke (wd:Q46830) ===
+  + birthDate: 1635-07-28T00:00:00Z
+  + deathDate: 1703-03-14T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q2428909
+  + deathPlace: http://www.wikidata.org/entity/Q84
+  + studiedAt: http://www.wikidata.org/entity/Q745967
+  + workedAt: http://www.wikidata.org/entity/Q123885
+  + fieldOfWork: http://www.wikidata.org/entity/Q816425
+  + notableWork: http://www.wikidata.org/entity/Q170282
+  + award: http://www.wikidata.org/entity/Q15631401
+  → 9 triplets ajoutés
+
+=== Leibniz (wd:Q9047) ===
+  + birthDate: 1646-07-01T00:00:00Z
+  + deathDate: 1716-11-14T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q2079
+  + deathPlace: http://www.wikidata.org/entity/Q1715
+  + studiedAt: http://www.wikidata.org/entity/Q154561
+  + workedAt: http://www.wikidata.org/entity/Q154804
+  + fieldOfWork: http://www.wikidata.org/entity/Q7754
+  + influencedBy: http://www.wikidata.org/entity/Q36330
+  + notableWork: http://www.wikidata.org/entity/Q150008
+  + award: http://www.wikidata.org/entity/Q15631401
+  → 10 triplets ajoutés
+
+=== Alexander_the_Great (wd:Q8409) ===
+  + birthDate: -0355-07-15T00:00:00Z
+  + deathDate: -0322-06-05T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q213679
+  + deathPlace: http://www.wikidata.org/entity/Q5684
+  + influencedBy: http://www.wikidata.org/entity/Q868
+  → 5 triplets ajoutés
+
+=== John_Locke (wd:Q9353) ===
+  + birthDate: 1632-09-08T00:00:00Z
+  + deathDate: 1704-11-08T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q1825419
+  + deathPlace: http://www.wikidata.org/entity/Q2233631
+  + studiedAt: http://www.wikidata.org/entity/Q745967
+  + workedAt: http://www.wikidata.org/entity/Q34433
+  + fieldOfWork: http://www.wikidata.org/entity/Q5891
+  + influencedBy: http://www.wikidata.org/entity/Q9191
+  + notableWork: http://www.wikidata.org/entity/Q231949
+  + award: http://www.wikidata.org/entity/Q15631401
+  → 10 triplets ajoutés
+
+=== Florence (wd:Q2044) ===
+  + award: http://www.wikidata.org/entity/Q129372
+  → 1 triplets ajoutés
+
+=== Athens (wd:Q1524) ===
+  + award: http://www.wikidata.org/entity/Q129372
+  → 1 triplets ajoutés
+
+=== Rome (wd:Q220) ===
+  → 0 triplets ajoutés
+
+=== Cambridge (wd:Q350) ===
+  → 0 triplets ajoutés
+
+=== San_Francisco (wd:Q62) ===
+  → 0 triplets ajoutés
+
+=== Greece (wd:Q41) ===
+  → 0 triplets ajoutés
+
+=== Italy (wd:Q38) ===
+  → 0 triplets ajoutés
+
+=== Royal_Society (wd:Q123885) ===
+  + fieldOfWork: http://www.wikidata.org/entity/Q336
+  + award: http://www.wikidata.org/entity/Q329157
+  → 2 triplets ajoutés
