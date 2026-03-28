@@ -178,6 +178,19 @@ PREFIX ex: <http://example.org/>
 SELECT ?s1 ?s2 WHERE {
   ?s1 ex:sharedInstitution ?s2 .
 }
+Q: When was Galileo born?
+A:
+PREFIX ex: <http://example.org/>
+SELECT ?date WHERE {
+  ex:Galileo ex:birthDate ?date .
+}
+
+Q: When did Newton die?
+A:
+PREFIX ex: <http://example.org/>
+SELECT ?date WHERE {
+  ex:Isaac_Newton ex:deathDate ?date .
+}
 """
 
 

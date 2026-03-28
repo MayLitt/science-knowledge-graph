@@ -16,7 +16,7 @@
       "plato",
       "socrates"
     ],
-    "got": "the European Renaissance, Plato, the medieval period, Thomas Aquinas, Isaac Newton",
+    "got": "the European Renaissance, Isaac Newton, the medieval period, Thomas Aquinas, Plato",
     "match": true,
     "attempts": 1,
     "repaired": false
@@ -50,7 +50,7 @@
       "hooke",
       "newton"
     ],
-    "got": "Rochester High School | Bachelor of Science, Luis | Bachelor of Science, the University of Chicago | Bachelor of Science, Aristotle | Plato, Rochester High School | Luis",
+    "got": "Rochester High School | Luis, 1932 | 1934, Chicago | 1934, Bachelor of Science | Rochester High School, the University of Chicago | Rochester High School",
     "match": false,
     "attempts": 1,
     "repaired": false

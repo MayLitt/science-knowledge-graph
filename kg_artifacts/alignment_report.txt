@@ -1,9 +1,9 @@
-=== Rapport d'alignement des prédicats ===
+=== Predicate Alignment Report ===
 
-Triplets initiaux  : 330
-Triplets alignés   : 164
-Triplets conservés : 308
-Triplets supprimés : 22
+Initial triples  : 330
+Aligned triples  : 160
+Kept triples     : 304
+Dropped triples  : 26
 
 ALIGNED  [55%]  come            → workedAt
 ALIGNED  [55%]  represent       → collaboratedWith
@@ -14,7 +14,6 @@ ALIGNED  [60%]  form            → memberOf
 ALIGNED  [60%]  talk            → collaboratedWith
 ALIGNED  [65%]  become          → memberOf
 ALIGNED  [65%]  expand          → knownFor
-ALIGNED  [65%]  improve         → authorOf
 ALIGNED  [65%]  spend           → workedAt
 ALIGNED  [70%]  build           → authorOf
 ALIGNED  [70%]  complete        → workedAt
@@ -32,57 +31,59 @@ ALIGNED  [85%]  teach           → taughtBy
 ALIGNED  [90%]  bear            → bornIn
 ALIGNED  [90%]  die             → diedIn
 ALIGNED  [90%]  write           → authorOf
-DROPPED  [50%]  ask              (confidence trop faible)
-DROPPED  [50%]  go               (confidence trop faible)
-DROPPED  [50%]  leave            (confidence trop faible)
-DROPPED  [50%]  send             (confidence trop faible)
-DROPPED  [50%]  summon           (confidence trop faible)
-KEPT_RAW          apologise        (pas de mapping)
-KEPT_RAW          ban              (pas de mapping)
-KEPT_RAW          begin            (pas de mapping)
-KEPT_RAW          challenge        (pas de mapping)
-KEPT_RAW          change           (pas de mapping)
-KEPT_RAW          claim            (pas de mapping)
-KEPT_RAW          close            (pas de mapping)
-KEPT_RAW          concern          (pas de mapping)
-KEPT_RAW          confront         (pas de mapping)
-KEPT_RAW          convene          (pas de mapping)
-KEPT_RAW          crumble          (pas de mapping)
-KEPT_RAW          decide           (pas de mapping)
-KEPT_RAW          din              (pas de mapping)
-KEPT_RAW          discuss          (pas de mapping)
-KEPT_RAW          enhance          (pas de mapping)
-KEPT_RAW          enter            (pas de mapping)
-KEPT_RAW          exert            (pas de mapping)
-KEPT_RAW          expect           (pas de mapping)
-KEPT_RAW          fight            (pas de mapping)
-KEPT_RAW          give             (pas de mapping)
-KEPT_RAW          hunt             (pas de mapping)
-KEPT_RAW          ignore           (pas de mapping)
-KEPT_RAW          include          (pas de mapping)
-KEPT_RAW          interrupt        (pas de mapping)
-KEPT_RAW          lodge            (pas de mapping)
-KEPT_RAW          mention          (pas de mapping)
-KEPT_RAW          move             (pas de mapping)
-KEPT_RAW          note             (pas de mapping)
-KEPT_RAW          notice           (pas de mapping)
-KEPT_RAW          oppose           (pas de mapping)
-KEPT_RAW          prepare          (pas de mapping)
-KEPT_RAW          put              (pas de mapping)
-KEPT_RAW          quarrel          (pas de mapping)
-KEPT_RAW          reproduce        (pas de mapping)
-KEPT_RAW          save             (pas de mapping)
-KEPT_RAW          see              (pas de mapping)
-KEPT_RAW          seek             (pas de mapping)
-KEPT_RAW          sit              (pas de mapping)
-KEPT_RAW          spirit           (pas de mapping)
-KEPT_RAW          steer            (pas de mapping)
-KEPT_RAW          suffer           (pas de mapping)
-KEPT_RAW          survive          (pas de mapping)
-KEPT_RAW          take             (pas de mapping)
-KEPT_RAW          think            (pas de mapping)
-KEPT_RAW          travel           (pas de mapping)
-KEPT_RAW          try              (pas de mapping)
-KEPT_RAW          turn             (pas de mapping)
-KEPT_RAW          want             (pas de mapping)
-KEPT_RAW          work             (pas de mapping)
+DROPPED  [50%]  ask              (confidence too low)
+DROPPED  [50%]  go               (confidence too low)
+DROPPED  [50%]  leave            (confidence too low)
+DROPPED  [50%]  send             (confidence too low)
+DROPPED  [50%]  summon           (confidence too low)
+KEPT_RAW          apologise        (no mapping found)
+KEPT_RAW          ban              (no mapping found)
+KEPT_RAW          begin            (no mapping found)
+KEPT_RAW          challenge        (no mapping found)
+KEPT_RAW          change           (no mapping found)
+KEPT_RAW          claim            (no mapping found)
+KEPT_RAW          close            (no mapping found)
+KEPT_RAW          concern          (no mapping found)
+KEPT_RAW          confront         (no mapping found)
+KEPT_RAW          convene          (no mapping found)
+KEPT_RAW          crumble          (no mapping found)
+KEPT_RAW          decide           (no mapping found)
+KEPT_RAW          din              (no mapping found)
+KEPT_RAW          discuss          (no mapping found)
+KEPT_RAW          enhance          (no mapping found)
+KEPT_RAW          enter            (no mapping found)
+KEPT_RAW          exert            (no mapping found)
+KEPT_RAW          expect           (no mapping found)
+KEPT_RAW          fight            (no mapping found)
+KEPT_RAW          give             (no mapping found)
+KEPT_RAW          hunt             (no mapping found)
+KEPT_RAW          ignore           (no mapping found)
+KEPT_RAW          include          (no mapping found)
+KEPT_RAW          interrupt        (no mapping found)
+KEPT_RAW          lodge            (no mapping found)
+KEPT_RAW          mention          (no mapping found)
+KEPT_RAW          move             (no mapping found)
+KEPT_RAW          note             (no mapping found)
+KEPT_RAW          notice           (no mapping found)
+KEPT_RAW          oppose           (no mapping found)
+KEPT_RAW          prepare          (no mapping found)
+KEPT_RAW          put              (no mapping found)
+KEPT_RAW          quarrel          (no mapping found)
+KEPT_RAW          reproduce        (no mapping found)
+KEPT_RAW          save             (no mapping found)
+KEPT_RAW          see              (no mapping found)
+KEPT_RAW          seek             (no mapping found)
+KEPT_RAW          sit              (no mapping found)
+KEPT_RAW          spirit           (no mapping found)
+KEPT_RAW          steer            (no mapping found)
+KEPT_RAW          suffer           (no mapping found)
+KEPT_RAW          survive          (no mapping found)
+KEPT_RAW          take             (no mapping found)
+KEPT_RAW          think            (no mapping found)
+KEPT_RAW          travel           (no mapping found)
+KEPT_RAW          try              (no mapping found)
+KEPT_RAW          turn             (no mapping found)
+KEPT_RAW          want             (no mapping found)
+KEPT_RAW          work             (no mapping found)
+SEMANTIC_DROP improve         (invalid authorOf object)
+SEMANTIC_DROP write           (invalid authorOf object)
