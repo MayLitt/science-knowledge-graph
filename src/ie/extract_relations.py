@@ -15,7 +15,7 @@ def load_documents(jsonl_file):
 
 
 if __name__ == "__main__":
-    print("⏳ Chargement du modèle spaCy...")
+    print("Loading spaCy model...")
     nlp = spacy.load("en_core_web_trf")
 
     rows = []
@@ -32,7 +32,7 @@ if __name__ == "__main__":
             if len(entities) < 2:
                 continue
 
-            # chercher le verbe principal de la phrase
+            # Identify the main verb of the sentence
             verbs = [token for token in sent if token.pos_ == "VERB"]
 
             if not verbs:
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
             verb = verbs[0].lemma_
 
-            # créer des relations simples entre paires d'entités
+            # Create simple relations between entity pairs
             for i in range(len(entities)):
                 for j in range(i + 1, len(entities)):
                     rows.append({
@@ -56,6 +56,6 @@ if __name__ == "__main__":
 
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
 
-    print("✅ Extraction de relations terminée")
-    print(f"Nombre de relations extraites: {len(df)}")
-    print(f"Fichier créé: {OUTPUT_FILE}")
+    print("Relation extraction completed")
+    print(f"Total relations extracted: {len(df)}")
+    print(f"Output file: {OUTPUT_FILE}")

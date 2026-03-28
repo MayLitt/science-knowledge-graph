@@ -7,19 +7,19 @@ GENERIC_VERBS = {
     "be", "have", "do", "make", "use", "say"
 }
 
-MAX_ENTITY_LENGTH = 7  # en nombre de mots
+MAX_ENTITY_LENGTH = 7  # maximum number of words per entity
 
 df = pd.read_csv(INPUT_FILE)
 
 initial_count = len(df)
 
-# 1. supprimer prédicats génériques
+# 1. Remove generic predicates
 df = df[~df["predicate"].isin(GENERIC_VERBS)]
 
-# 2. supprimer auto-relations
+# 2. Remove self-relations
 df = df[df["subject"] != df["object"]]
 
-# 3. supprimer entités trop longues
+# 3. Remove overly long entities
 df = df[
     (df["subject"].str.split().str.len() <= MAX_ENTITY_LENGTH) &
     (df["object"].str.split().str.len() <= MAX_ENTITY_LENGTH)
@@ -27,7 +27,7 @@ df = df[
 
 df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
 
-print("Nettoyage terminé")
-print(f"Relations initiales : {initial_count}")
-print(f"Relations après nettoyage : {len(df)}")
-print(f"Fichier créé : {OUTPUT_FILE}")
+print("Cleaning completed")
+print(f"Initial relations: {initial_count}")
+print(f"Relations after cleaning: {len(df)}")
+print(f"Output file: {OUTPUT_FILE}")

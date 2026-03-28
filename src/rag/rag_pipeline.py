@@ -1,19 +1,19 @@
 """
-rag_pipeline.py (v2 — amélioré)
+rag_pipeline.py (v2 — improved)
 --------------------------------
-Pipeline RAG : Question en langage naturel → SPARQL → Résultat
-avec mécanisme de self-repair et déréférencement des IDs Wikidata.
+RAG pipeline: Natural language question → SPARQL → Result
+with self-repair mechanism and Wikidata ID dereferencing.
 
-Améliorations v2 :
-  - PREFIX ex: forcé dans chaque prompt → moins d'erreurs LLM
-  - Déréférencement wd_QXXX → labels lisibles (ex: wd_Q333 → "astronomy")
-  - Schema summary enrichi avec ex:sharedInstitution
+v2 Improvements:
+  - PREFIX ex: forced in every prompt → fewer LLM errors
+  - Dereferencing wd_QXXX → readable labels (e.g., wd_Q333 → "astronomy")
+  - Enriched schema summary with ex:sharedInstitution
 
-Usage (depuis la racine du projet) :
-    python src/rag/rag_pipeline.py        # mode interactif
-    python src/rag/rag_pipeline.py eval   # mode évaluation
+Usage (from project root):
+    python src/rag/rag_pipeline.py        # interactive mode
+    python src/rag/rag_pipeline.py eval   # evaluation mode
 
-Dépendances :
+Dependencies:
     pip install rdflib requests
 """
 
@@ -31,7 +31,7 @@ MAX_RETRIES  = 3
 
 EX = Namespace("http://example.org/")
 
-# ── Table de déréférencement Wikidata ────────────────────────
+# ── Wikidata dereferencing table ────────────────────────
 WD_LABELS = {
     "wd_Q13375":   "Pisa",
     "wd_Q193510":  "University of Padua",
@@ -113,75 +113,95 @@ WD_LABELS = {
 }
 
 # ── Schema summary enrichi ───────────────────────────────────
-SCHEMA_SUMMARY = """You are a SPARQL expert. You MUST always start your query with:
+SCHEMA_SUMMARY = """You are a SPARQL expert.
+
+You MUST always start your query with:
 PREFIX ex: <http://example.org/>
 
 The knowledge graph contains information about famous scientists.
 
 Available predicates:
-  ex:bornIn          - place where a person was born
-  ex:diedIn          - place where a person died
-  ex:studiedAt       - institution where a person studied
-  ex:workedAt        - institution where a person worked
-  ex:influencedBy    - person or idea that influenced someone
-  ex:authorOf        - work authored by a person
-  ex:knownFor        - discovery or achievement a person is known for
-  ex:collaboratedWith - person collaborated with
-  ex:memberOf        - organisation a person belongs to
-  ex:birthDate       - birth date (literal)
-  ex:deathDate       - death date (literal)
-  ex:indirectlyInfluencedBy - transitive influence chain (inferred by SWRL)
-  ex:sharedInstitution - two scientists who studied at the same institution (inferred by SWRL)
+  ex:bornIn
+  ex:diedIn
+  ex:studiedAt
+  ex:workedAt
+  ex:influencedBy
+  ex:authorOf
+  ex:knownFor
+  ex:collaboratedWith
+  ex:memberOf
+  ex:birthDate
+  ex:deathDate
+  ex:indirectlyInfluencedBy
+  ex:sharedInstitution
 
 Key entities (copy exact spelling including capital letters):
   ex:Galileo, ex:Newton, ex:Isaac_Newton, ex:Aristotle, ex:Plato, ex:Socrates
   ex:Copernicus, ex:Leibniz, ex:Robert_Hooke, ex:John_Locke, ex:Luis_Alvarez
   ex:Florence, ex:Athens, ex:Rome, ex:Cambridge, ex:Royal_Society
 
-Rules:
-1. ALWAYS include: PREFIX ex: <http://example.org/>
-2. Use SELECT queries only
-3. Keep queries simple - one or two triple patterns maximum
-4. Return ONLY the SPARQL query, no explanation, no markdown, no backticks
-5. Never use FILTER with function syntax like FILTER(ex:something(?x))
+STRICT RULES:
+1. Use SELECT queries only.
+2. Use ONLY direct triple patterns:
+   ex:Entity ex:predicate ?variable .
+3. NEVER use:
+   - blank nodes []
+   - rdf:type
+   - owl:
+   - rdfs:
+   - FILTER
+   - string literals like "Aristotle"
+   - full URIs (http://...)
+4. Only use predicates listed above.
+5. Keep queries simple (one or two triple patterns maximum).
+6. Return ONLY the SPARQL query.
 
-Example queries:
-  Q: Where was Galileo born?
-  A: PREFIX ex: <http://example.org/>
-     SELECT ?place WHERE { ex:Galileo ex:bornIn ?place . }
+Examples:
 
-  Q: Who influenced Newton?
-  A: PREFIX ex: <http://example.org/>
-     SELECT ?person WHERE { ex:Newton ex:influencedBy ?person . }
+Q: Where was Galileo born?
+A:
+PREFIX ex: <http://example.org/>
+SELECT ?place WHERE {
+  ex:Galileo ex:bornIn ?place .
+}
 
-  Q: Which scientists shared the same institution?
-  A: PREFIX ex: <http://example.org/>
-     SELECT ?s1 ?s2 WHERE { ?s1 ex:sharedInstitution ?s2 . }
+Q: Who influenced Newton?
+A:
+PREFIX ex: <http://example.org/>
+SELECT ?person WHERE {
+  ex:Newton ex:influencedBy ?person .
+}
+
+Q: Which scientists shared the same institution?
+A:
+PREFIX ex: <http://example.org/>
+SELECT ?s1 ?s2 WHERE {
+  ?s1 ex:sharedInstitution ?s2 .
+}
 """
 
 
 # ══════════════════════════════════════════════════════════════
-#  Utilitaires
+#  Utilities
 # ══════════════════════════════════════════════════════════════
 
 def dereference(value: str) -> str:
-    """Convertit un ID Wikidata en label lisible."""
+    """Convert a Wikidata ID into a readable label."""
     key = value.replace(" ", "_")
     if key in WD_LABELS:
         return WD_LABELS[key]
-    # Nettoyer les underscores pour les entités locales
     return value.replace("_", " ")
 
 
 def load_kb(path):
     g = Graph()
     g.parse(path, format="nt")
-    print(f"KB chargé : {len(g)} triplets")
+    print(f"KB loaded: {len(g)} triples")
     return g
 
 
 # ══════════════════════════════════════════════════════════════
-#  Génération SPARQL via Ollama
+#  SPARQL generation via Ollama
 # ══════════════════════════════════════════════════════════════
 
 def generate_sparql(question: str, error_feedback: str = None) -> str:
@@ -215,7 +235,6 @@ Return ONLY the SPARQL query."""
     response.raise_for_status()
     raw = response.json()["response"].strip()
 
-    # Nettoyer les backticks markdown
     if "```" in raw:
         lines = raw.split("\n")
         cleaned = []
@@ -227,7 +246,6 @@ Return ONLY the SPARQL query."""
             cleaned.append(line)
         raw = "\n".join(cleaned).strip()
 
-    # Forcer le PREFIX si absent
     if "PREFIX ex:" not in raw:
         raw = "PREFIX ex: <http://example.org/>\n" + raw
 
@@ -235,7 +253,7 @@ Return ONLY the SPARQL query."""
 
 
 # ══════════════════════════════════════════════════════════════
-#  Exécution SPARQL + déréférencement
+#  SPARQL execution + dereferencing
 # ══════════════════════════════════════════════════════════════
 
 def execute_sparql(g: Graph, query: str):
@@ -254,13 +272,13 @@ def execute_sparql(g: Graph, query: str):
 
 
 # ══════════════════════════════════════════════════════════════
-#  Pipeline avec self-repair
+#  Pipeline with self-repair
 # ══════════════════════════════════════════════════════════════
 
 def ask(g: Graph, question: str, verbose: bool = True) -> dict:
     if verbose:
         print(f"\n{'─'*60}")
-        print(f"Question : {question}")
+        print(f"Question: {question}")
 
     query    = None
     results  = []
@@ -274,7 +292,7 @@ def ask(g: Graph, question: str, verbose: bool = True) -> dict:
         try:
             query = generate_sparql(question, error_feedback=error)
             if verbose:
-                label = "SPARQL généré :" if attempt == 1 else f"SPARQL corrigé (tentative {attempt}) :"
+                label = "Generated SPARQL:" if attempt == 1 else f"Corrected SPARQL (attempt {attempt}):"
                 print(f"\n{label}")
                 print(query)
         except Exception as e:
@@ -290,19 +308,19 @@ def ask(g: Graph, question: str, verbose: bool = True) -> dict:
         except Exception as e:
             error = str(e)
             if verbose:
-                print(f"\n⚠ Erreur SPARQL (tentative {attempt}) : {error[:120]}")
+                print(f"\n⚠ SPARQL error (attempt {attempt}): {error[:120]}")
 
     if error:
-        answer = "Échec après self-repair"
+        answer = "Failed after self-repair"
     elif not results:
-        answer = "Aucun résultat trouvé"
+        answer = "No results found"
     else:
         answer = ", ".join([" | ".join(r) for r in results[:5]])
 
     if verbose:
-        print(f"\nRéponse : {answer}")
+        print(f"\nAnswer: {answer}")
         if repaired:
-            print(f"✓ Self-repair réussi en {attempts} tentatives")
+            print(f"✓ Self-repair succeeded in {attempts} attempts")
 
     return {
         "question": question,
@@ -315,8 +333,9 @@ def ask(g: Graph, question: str, verbose: bool = True) -> dict:
     }
 
 
+
 # ══════════════════════════════════════════════════════════════
-#  Évaluation baseline vs RAG
+#  Baseline vs. RAG Assessment
 # ══════════════════════════════════════════════════════════════
 
 EVAL_QUESTIONS = [
@@ -338,7 +357,7 @@ BASELINE = {
 
 def evaluate(g: Graph):
     print("\n" + "═"*60)
-    print("ÉVALUATION — Baseline vs RAG")
+    print("EVALUATION — Baseline vs RAG")
     print("═"*60)
 
     results_log = []
@@ -350,7 +369,7 @@ def evaluate(g: Graph):
         got_lower = result["answer"].lower()
         match     = any(kw in got_lower for kw in keywords)
 
-        print(f"  Attendu  : {', '.join(keywords)}")
+        print(f"  Expected : {', '.join(keywords)}")
         print(f"  Match    : {'✓' if match else '✗'}")
 
         results_log.append({
@@ -362,32 +381,31 @@ def evaluate(g: Graph):
             "repaired": result["repaired"],
         })
 
-    # Rapport
     print("\n" + "═"*60)
-    print("RAPPORT D'ÉVALUATION")
+    print("EVALUATION REPORT")
     print("═"*60)
-    print(f"\n{'Question':<45} {'Match':<8} {'Tentatives':<12} {'Self-repair'}")
+    print(f"\n{'Question':<45} {'Match':<8} {'Attempts':<12} {'Self-repair'}")
     print("─"*80)
     for r in results_log:
-        print(f"{r['question']:<45} {'✓' if r['match'] else '✗':<8} {r['attempts']:<12} {'Oui' if r['repaired'] else 'Non'}")
+        print(f"{r['question']:<45} {'✓' if r['match'] else '✗':<8} {r['attempts']:<12} {'Yes' if r['repaired'] else 'No'}")
 
     matched = sum(1 for r in results_log if r["match"])
-    print(f"\nScore RAG      : {matched}/{len(results_log)}")
-    print(f"Score baseline : 0/{len(results_log)} (pas de SPARQL automatique)")
+    print(f"\nRAG score      : {matched}/{len(results_log)}")
+    print(f"Baseline score : 0/{len(results_log)} (no automatic SPARQL)")
 
     with open("kg_artifacts/rag_evaluation.json", "w", encoding="utf-8") as f:
         json.dump(results_log, f, indent=2, ensure_ascii=False)
-    print("\nRapport sauvegardé : kg_artifacts/rag_evaluation.json")
+    print("\nReport saved: kg_artifacts/rag_evaluation.json")
 
 
 # ══════════════════════════════════════════════════════════════
-#  Mode interactif
+#  interactive Mode
 # ══════════════════════════════════════════════════════════════
 
 def interactive(g: Graph):
     print("\n" + "═"*60)
-    print("RAG DEMO — Mode interactif (v2)")
-    print("Tape 'quit' pour quitter, 'eval' pour l'évaluation")
+    print("RAG DEMO — Interactive mode (v2)")
+    print("Type 'quit' to exit, 'eval' for evaluation")
     print("═"*60)
 
     while True:
@@ -404,7 +422,6 @@ def interactive(g: Graph):
             continue
         ask(g, question, verbose=True)
 
-
 # ══════════════════════════════════════════════════════════════
 #  MAIN
 # ══════════════════════════════════════════════════════════════
@@ -413,8 +430,8 @@ if __name__ == "__main__":
     try:
         requests.get("http://localhost:11434", timeout=3)
     except Exception:
-        print("ERREUR : Ollama ne répond pas.")
-        print("Lance 'ollama serve' dans un autre terminal.")
+        print("ERROR: Ollama is not responding.")
+        print("Run 'ollama serve' in another terminal.")
         sys.exit(1)
 
     g = load_kb(KB_PATH)

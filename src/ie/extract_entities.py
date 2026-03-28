@@ -5,7 +5,7 @@ import pandas as pd
 INPUT_FILE = "crawler_output.jsonl"
 OUTPUT_FILE = "extracted_knowledge.csv"
 
-# Types d'entités à conserver
+# Entity types to keep
 ALLOWED_LABELS = {"PERSON", "ORG", "GPE", "DATE"}
 
 
@@ -32,7 +32,7 @@ def extract_entities(text, nlp):
 
 
 if __name__ == "__main__":
-    print("Chargement du modèle spaCy (ça peut prendre un peu de temps)...")
+    print("Loading spaCy model (this may take a moment)...")
     nlp = spacy.load("en_core_web_trf")
 
     documents = load_documents(INPUT_FILE)
@@ -57,6 +57,6 @@ if __name__ == "__main__":
 
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
 
-    print("Extraction terminée")
-    print(f"Nombre total d'entités extraites: {len(df)}")
-    print(f"Fichier créé: {OUTPUT_FILE}")
+    print("Extraction completed")
+    print(f"Total entities extracted: {len(df)}")
+    print(f"Output file: {OUTPUT_FILE}")

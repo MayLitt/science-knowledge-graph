@@ -1,478 +1,478 @@
-<http://example.org/the_Royal_Society> <http://example.org/memberOf> <http://example.org/Newton> .
-<http://example.org/Maffeo_Cardinal_Barberini> <http://example.org/workedAt> <http://example.org/a_decade> .
-<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/the_University_of_Chicago> .
-<http://example.org/25_December_1642> <http://example.org/expect> <http://example.org/Lincolnshire> .
-<http://example.org/wd_Q36330> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/wd_Q2079> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/wd_Q129372> <http://www.w3.org/2000/01/rdf-schema#label> "Athens" .
-<http://example.org/Greece> <http://example.org/crumble> <http://example.org/384_BC> .
-<http://example.org/Rome> <http://example.org/interrupt> <http://example.org/Florence> .
-<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/Berkeley> .
-<http://example.org/San_Francisco> <http://example.org/begin> <http://example.org/Polytechnic_High_School> .
-<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/Athens> .
-<http://example.org/Royal_Society> <http://example.org/knownFor> <http://example.org/wd_Q336> .
-<http://example.org/342_BC> <http://example.org/workedAt> <http://example.org/Macedonia> .
-<http://example.org/the_early_1800s> <http://example.org/notice> <http://example.org/Georges_Cuvier> .
-<http://example.org/Alexander_the_Great> <http://example.org/deathDate> "-0322-06-0"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Aristotle> <http://example.org/authorOf> <http://example.org/Alexander> .
-<http://example.org/Galileo> <http://example.org/collaboratedWith> <http://example.org/Sagredo> .
-<http://example.org/wd_Q231949> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/Alvarez> <http://example.org/authorOf> <http://example.org/Geiger> .
-<http://example.org/wd_Q846127> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
-<http://example.org/Catherine> <http://example.org/collaboratedWith> <http://example.org/his_later_years> .
-<http://example.org/1932> <http://example.org/authorOf> <http://example.org/Geiger> .
-<http://example.org/One_day> <http://example.org/collaboratedWith> <http://example.org/Alvarez> .
-<http://example.org/the_University_of_California_s> <http://example.org/workedAt> <http://example.org/Radiation_Laboratory> .
-<http://example.org/Alexander> <http://example.org/diedIn> <http://example.org/Athens> .
-<http://example.org/Robert_Hooke> <http://example.org/knownFor> <http://example.org/wd_Q15631401> .
-<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Walter> .
-<http://example.org/Simplicio> <http://example.org/collaboratedWith> <http://example.org/Galileo> .
-<http://example.org/Arcetri> <http://example.org/workedAt> <http://example.org/Florence> .
-<http://example.org/1943> <http://example.org/knownFor> <http://example.org/Germany> .
-<http://example.org/wd_Q745967> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/Isaac_Newton> <http://example.org/birthDate> "1643-01-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Rome> <http://example.org/turn> <http://example.org/1615> .
-<http://example.org/John_Locke> <http://example.org/knownFor> <http://example.org/wd_Q5891> .
-<http://example.org/wd_Q1524> <http://www.w3.org/2000/01/rdf-schema#label> "Socrates" .
-<http://example.org/Luis_Alvarez> <http://example.org/authorOf> <http://example.org/wd_Q177524> .
-<http://example.org/Woolsthorpe> <http://example.org/expect> <http://example.org/Lincolnshire> .
-<http://example.org/Los_Alamos> <http://example.org/workedAt> <http://example.org/New_Mexico> .
-<http://example.org/1932> <http://example.org/workedAt> <http://example.org/James_Chadwick> .
-<http://example.org/Alexander_the_Great> <http://example.org/workedAt> <http://example.org/Aristotle> .
-<http://example.org/1990> <http://example.org/workedAt> <http://example.org/Alvarez> .
-<http://example.org/Inquisition> <http://example.org/note> <http://example.org/Vatican> .
-<http://example.org/the_medieval_period> <http://example.org/influencedBy> <http://example.org/Isaac_Newton> .
-<http://example.org/1932> <http://example.org/workedAt> <http://example.org/Carl_Anderson> .
-<http://example.org/323_BC> <http://example.org/diedIn> <http://example.org/Aristotle> .
-<http://example.org/wd_Q969370> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/June_13__1911> <http://example.org/bornIn> <http://example.org/California> .
-<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/Radiation_Laboratory> .
-<http://example.org/Newton> <http://example.org/collaboratedWith> <http://example.org/his_later_years> .
-<http://example.org/Newton> <http://example.org/knownFor> <http://example.org/many_years> .
-<http://example.org/Aristotle> <http://example.org/diedIn> <http://example.org/wd_Q21235810> .
-<http://example.org/wd_Q15631401> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Galileo> <http://example.org/mention> <http://example.org/Robert_Cardinal_Bellarmine> .
-<http://example.org/San_Francisco> <http://example.org/bornIn> <http://example.org/California> .
-<http://example.org/Luis_Alvarez> <http://example.org/knownFor> <http://example.org/wd_Q11023> .
-<http://example.org/Rome> <http://example.org/turn> <http://example.org/c__1565_1616> .
-<http://example.org/1615> <http://example.org/turn> <http://example.org/Paolo_Antonio_Foscarini> .
-<http://example.org/Copernicus> <http://example.org/bornIn> <http://example.org/wd_Q47554> .
-<http://example.org/The_Doc> <http://example.org/enhance> <http://example.org/Luis_Alvarez> .
-<http://example.org/1944> <http://example.org/workedAt> <http://example.org/Los_Alamos> .
-<http://example.org/wd_Q69539> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
-<http://example.org/Alvarez> <http://example.org/memberOf> <http://example.org/Walter> .
-<http://example.org/wd_Q5891> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/1615> <http://example.org/turn> <http://example.org/c__1565_1616> .
-<http://example.org/wd_Q21235810> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
-<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/Bellarmine> .
-<http://example.org/Luis_Alvarez> <http://example.org/deathDate> "2018-12-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/wd_Q154561> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/1713> <http://example.org/memberOf> <http://example.org/the_Royal_Society> .
-<http://example.org/1615> <http://example.org/turn> <http://example.org/Inquisition> .
-<http://example.org/Aristotle> <http://example.org/authorOf> <http://example.org/wd_Q69539> .
-<http://example.org/Italy> <http://example.org/spirit> <http://example.org/Leiden> .
-<http://example.org/wd_Q505549> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Alexander> <http://example.org/seek> <http://example.org/Lyceum> .
-<http://example.org/wd_Q675765> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Donald> .
-<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Helen> .
-<http://example.org/Socrates> <http://example.org/include> <http://example.org/Hippocrates> .
-<http://example.org/wd_Q2031761> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/Siena> <http://example.org/workedAt> <http://example.org/Arcetri> .
-<http://example.org/Galileo> <http://example.org/lodge> <http://example.org/Rome> .
-<http://example.org/wd_Q586762> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Luis_Walter_Alvarez> <http://example.org/bornIn> <http://example.org/San_Francisco> .
-<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/c__1590_1671> .
 <http://example.org/Benedetto_Castelli> <http://example.org/authorOf> <http://example.org/Pisa> .
-<http://example.org/Aristotle> <http://example.org/think> <http://example.org/335_BC> .
-<http://example.org/Leibniz> <http://example.org/deathDate> "1716-11-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Alexander> <http://example.org/diedIn> <http://example.org/323_BC> .
-<http://example.org/Alvarez> <http://example.org/think> <http://example.org/Glaser> .
-<http://example.org/Plato> <http://example.org/knownFor> <http://example.org/wd_Q316> .
-<http://example.org/Leibniz> <http://example.org/knownFor> <http://example.org/many_years> .
-<http://example.org/wd_Q83041> <http://www.w3.org/2000/01/rdf-schema#label> "Socrates" .
-<http://example.org/wd_Q49108> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Luis_Alvarez> <http://example.org/diedIn> <http://example.org/wd_Q505549> .
-<http://example.org/John_Locke> <http://example.org/studiedAt> <http://example.org/wd_Q745967> .
-<http://example.org/Italy> <http://example.org/spirit> <http://example.org/1638> .
-<http://example.org/Luis_Alvarez> <http://example.org/move> <http://example.org/Berkeley> .
-<http://example.org/Galileo> <http://example.org/interrupt> <http://example.org/Florence> .
-<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/the_European_Renaissance> .
-<http://example.org/Foscarini> <http://example.org/ban> <http://example.org/Johannes_Kepler_s> .
-<http://example.org/wd_Q9191> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/wd_Q868> <http://www.w3.org/2000/01/rdf-schema#label> "Alexander the Great" .
-<http://example.org/Rochester_High_School> <http://example.org/studiedAt> <http://example.org/1928> .
-<http://example.org/Newton> <http://example.org/studiedAt> <http://example.org/Cambridge> .
-<http://example.org/wd_Q288781> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/wd_Q2233631> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/1936> <http://example.org/workedAt> <http://example.org/Berkeley> .
-<http://example.org/Maffeo_Cardinal_Barberini> <http://example.org/workedAt> <http://example.org/Urban_VIII> .
-<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Jean> .
-<http://example.org/Paris> <http://example.org/notice> <http://example.org/the_early_1800s> .
-<http://example.org/Cambridge> <http://example.org/steer> <http://example.org/Newton> .
-<http://example.org/wd_Q84> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Socrates> <http://example.org/knownFor> <http://example.org/wd_Q5891> .
-<http://example.org/Copernicus> <http://example.org/knownFor> <http://example.org/wd_Q395> .
-<http://example.org/Newton> <http://example.org/claim> <http://example.org/Leibniz> .
-<http://example.org/Newton> <http://example.org/din> <http://example.org/Woolsthorpe> .
-<http://example.org/Leiden> <http://example.org/spirit> <http://example.org/1638> .
-<http://example.org/Alvarez> <http://example.org/authorOf> <http://example.org/Mother_Nature> .
-<http://example.org/Copernicus> <http://example.org/deathDate> "1543-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Galileo> <http://example.org/deathDate> "1642-01-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/Alexander_the_Great> .
-<http://example.org/five_nights_in_a_row> <http://example.org/work> <http://example.org/Newton> .
-<http://example.org/wd_Q213679> <http://www.w3.org/2000/01/rdf-schema#label> "Alexander the Great" .
-<http://example.org/Siena> <http://example.org/workedAt> <http://example.org/Florence> .
-<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Arcetri> .
-<http://example.org/Plato> <http://example.org/influencedBy> <http://example.org/wd_Q913> .
-<http://example.org/1944> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
-<http://example.org/wd_Q154804> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/Stagira__Macedonia> <http://example.org/crumble> <http://example.org/384_BC> .
-<http://example.org/John_Locke> <http://example.org/apologise> <http://example.org/Samuel_Pepys> .
-<http://example.org/wd_Q1825419> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/Aristotle> <http://example.org/bornIn> <http://example.org/wd_Q846127> .
-<http://example.org/wd_Q497115> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/early_1954> <http://example.org/put> <http://example.org/Berkeley> .
-<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/Rochester_High_School> .
-<http://example.org/Copernicus> <http://example.org/knownFor> <http://example.org/wd_Q99951011> .
-<http://example.org/Socrates> <http://example.org/influencedBy> <http://example.org/wd_Q83041> .
-<http://example.org/Cambridge> <http://example.org/steer> <http://example.org/the_day> .
-<http://example.org/Aristotle> <http://example.org/taughtBy> <http://example.org/several_years> .
-<http://example.org/1932> <http://example.org/authorOf> <http://example.org/Alvarez> .
-<http://example.org/Leibniz> <http://example.org/knownFor> <http://example.org/wd_Q7754> .
-<http://example.org/c__1590_1671> <http://example.org/workedAt> <http://example.org/Siena> .
-<http://example.org/the_age_of_77> <http://example.org/diedIn> <http://example.org/September_1__1988> .
-<http://example.org/wd_Q333> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/wd_Q336> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Society" .
-<http://example.org/Islam> <http://example.org/exert> <http://example.org/Aristotle> .
-<http://example.org/Leibniz> <http://example.org/authorOf> <http://example.org/wd_Q150008> .
-<http://example.org/Aristotle> <http://example.org/include> <http://example.org/Hippocrates> .
-<http://example.org/Luis> <http://example.org/begin> <http://example.org/Madison_School> .
-<http://example.org/wd_Q9191> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Janet_Landis> .
-<http://example.org/Asaro> <http://example.org/knownFor> <http://example.org/Helen_Michel> .
-<http://example.org/Glaser> <http://example.org/collaboratedWith> <http://example.org/Alvarez> .
-<http://example.org/wd_Q13375> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/Galileo> <http://example.org/take> <http://example.org/the_centuries> .
-<http://example.org/Florence> <http://example.org/authorOf> <http://example.org/1632> .
-<http://example.org/Sagredo> <http://example.org/collaboratedWith> <http://example.org/Simplicio> .
-<http://example.org/Plato> <http://example.org/deathDate> "-0348-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/Thomas_Aquinas> .
-<http://example.org/Paolo_Antonio_Foscarini> <http://example.org/turn> <http://example.org/Inquisition> .
-<http://example.org/Isaac_Newton> <http://example.org/diedIn> <http://example.org/wd_Q288781> .
-<http://example.org/Athens> <http://example.org/travel> <http://example.org/the_Academy_of_Plato> .
-<http://example.org/Plato> <http://example.org/authorOf> <http://example.org/wd_Q123397> .
-<http://example.org/1932> <http://example.org/workedAt> <http://example.org/the_year> .
-<http://example.org/c__1590_1671> <http://example.org/workedAt> <http://example.org/Arcetri> .
-<http://example.org/Lyceum> <http://example.org/seek> <http://example.org/Aristotle> .
-<http://example.org/wd_Q47554> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/wd_Q3316008> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Florence> .
-<http://example.org/wd_Q645663> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/1944> <http://example.org/workedAt> <http://example.org/New_Mexico> .
-<http://example.org/wd_Q170282> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Isaac_Barrow> <http://example.org/steer> <http://example.org/Cambridge> .
-<http://example.org/Mexico> <http://example.org/workedAt> <http://example.org/Alvarez> .
-<http://example.org/20_years_before> <http://example.org/claim> <http://example.org/Leibniz> .
-<http://example.org/wd_Q859> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
-<http://example.org/the_year> <http://example.org/workedAt> <http://example.org/James_Chadwick> .
-<http://example.org/Newton> <http://example.org/knownFor> <http://example.org/Leibniz> .
-<http://example.org/Isaac_Newton> <http://example.org/knownFor> <http://example.org/wd_Q333> .
-<http://example.org/John_Locke> <http://example.org/deathDate> "1704-11-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Isaac_Newton> <http://example.org/deathDate> "1727-03-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Copernicus> <http://example.org/birthDate> "1473-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Galileo> <http://example.org/note> <http://example.org/Inquisition> .
-<http://example.org/Royal_Society> <http://example.org/din> <http://example.org/William_Stukeley> .
-<http://example.org/Copernicus> <http://example.org/studiedAt> <http://example.org/wd_Q131262> .
-<http://example.org/Socrates> <http://example.org/bornIn> <http://example.org/wd_Q1524> .
-<http://example.org/wd_Q395> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/wd_Q316> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
-<http://example.org/Radiation_Laboratory> <http://example.org/workedAt> <http://example.org/Berkeley> .
-<http://example.org/Rochester> <http://example.org/change> <http://example.org/Minnesota> .
-<http://example.org/two_years> <http://example.org/workedAt> <http://example.org/Mexico> .
-<http://example.org/Leibniz> <http://example.org/knownFor> <http://example.org/wd_Q15631401> .
-<http://example.org/1926> <http://example.org/change> <http://example.org/Minnesota> .
-<http://example.org/Christina> <http://example.org/discuss> <http://example.org/Galileo> .
-<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/Siena> .
-<http://example.org/Alexander_the_Great> <http://example.org/workedAt> <http://example.org/342_BC> .
-<http://example.org/Plato> <http://example.org/include> <http://example.org/Socrates> .
-<http://example.org/Orazio_Grassi> <http://example.org/enter> <http://example.org/the_Collegio_Romano> .
-<http://example.org/1943> <http://example.org/knownFor> <http://example.org/Alvarez> .
-<http://example.org/Galileo> <http://example.org/knownFor> <http://example.org/wd_Q99951011> .
-<http://example.org/Jean> <http://example.org/survive> <http://example.org/Donald> .
-<http://example.org/Jean> <http://example.org/survive> <http://example.org/Helen> .
-<http://example.org/Copernicus> <http://example.org/authorOf> <http://example.org/wd_Q675765> .
-<http://example.org/Bachelor_of_Science> <http://example.org/studiedAt> <http://example.org/the_University_of_Chicago> .
-<http://example.org/1926> <http://example.org/change> <http://example.org/Rochester> .
-<http://example.org/Luis_Walter_Alvarez> <http://example.org/bornIn> <http://example.org/June_13__1911> .
-<http://example.org/San_Francisco> <http://example.org/begin> <http://example.org/Madison_School> .
-<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/Macedonia> .
-<http://example.org/Florence> <http://example.org/interrupt> <http://example.org/Galileo> .
-<http://example.org/wd_Q129372> <http://www.w3.org/2000/01/rdf-schema#label> "Florence" .
-<http://example.org/Aristotle> <http://example.org/seek> <http://example.org/Lyceum> .
-<http://example.org/Inquisition> <http://example.org/prepare> <http://example.org/Galileo> .
-<http://example.org/Inquisition> <http://example.org/confront> <http://example.org/1616> .
-<http://example.org/Isaac_Newton> <http://example.org/authorOf> <http://example.org/wd_Q74263> .
-<http://example.org/a_decade> <http://example.org/workedAt> <http://example.org/Urban_VIII> .
-<http://example.org/Aristotle> <http://example.org/knownFor> <http://example.org/wd_Q5891> .
-<http://example.org/Walter> <http://example.org/survive> <http://example.org/Donald> .
-<http://example.org/Walter> <http://example.org/survive> <http://example.org/Helen> .
-<http://example.org/Rochester_High_School> <http://example.org/studiedAt> <http://example.org/Bachelor_of_Science> .
-<http://example.org/Luis_Alvarez_s> <http://example.org/workedAt> <http://example.org/Mexico> .
-<http://example.org/Cambridge_University> <http://example.org/close> <http://example.org/Newton> .
-<http://example.org/Aristotle> <http://example.org/diedIn> <http://example.org/Athens> .
-<http://example.org/wd_Q833163> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/Newton> <http://example.org/studiedAt> <http://example.org/Trinity_College> .
-<http://example.org/1936> <http://example.org/workedAt> <http://example.org/Alvarez> .
-<http://example.org/Alexander_the_Great> <http://example.org/ignore> <http://example.org/Aristotle> .
-<http://example.org/wd_Q189441> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/1928> .
-<http://example.org/wd_Q219207> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/wd_Q15631401> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/Leibniz> <http://example.org/workedAt> <http://example.org/wd_Q154804> .
-<http://example.org/Luis> <http://example.org/begin> <http://example.org/Polytechnic_High_School> .
-<http://example.org/Isaac_Barrow> <http://example.org/steer> <http://example.org/Newton> .
-<http://example.org/Macedonia> <http://example.org/workedAt> <http://example.org/Alexander_the_Great> .
-<http://example.org/Alexander> <http://example.org/seek> <http://example.org/Aristotle> .
-<http://example.org/Luis> <http://example.org/begin> <http://example.org/San_Francisco> .
-<http://example.org/335_BC> <http://example.org/think> <http://example.org/Alexander> .
-<http://example.org/William_Stukeley> <http://example.org/din> <http://example.org/Newton> .
-<http://example.org/wd_Q745967> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/1632> .
-<http://example.org/Galileo> <http://example.org/memberOf> <http://example.org/Vincenzo_Viviani> .
-<http://example.org/John_Locke> <http://example.org/workedAt> <http://example.org/wd_Q34433> .
-<http://example.org/Chicago> <http://example.org/studiedAt> <http://example.org/1934> .
-<http://example.org/Aristotle> <http://example.org/crumble> <http://example.org/Greece> .
-<http://example.org/Sagredo> <http://example.org/collaboratedWith> <http://example.org/Galileo> .
-<http://example.org/early_1954> <http://example.org/put> <http://example.org/Alvarez> .
-<http://example.org/Florence> <http://example.org/interrupt> <http://example.org/Rome> .
-<http://example.org/Galileo> <http://example.org/workedAt> <http://example.org/Urban_VIII> .
-<http://example.org/the_University_of_Chicago> <http://example.org/studiedAt> <http://example.org/1928> .
-<http://example.org/Royal_Society> <http://example.org/din> <http://example.org/Newton> .
-<http://example.org/John_Locke> <http://example.org/influencedBy> <http://example.org/wd_Q9191> .
-<http://example.org/Isaac_Newton> <http://example.org/bornIn> <http://example.org/wd_Q3316008> .
-<http://example.org/wd_Q5891> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
-<http://example.org/1630> <http://example.org/concern> <http://example.org/Galileo> .
-<http://example.org/wd_Q99951011> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Ascanio_Piccolomini> .
-<http://example.org/Aristotle> <http://example.org/deathDate> "-0321-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Aristotle> <http://example.org/studiedAt> <http://example.org/Socrates> .
-<http://example.org/Luis_Alvarez> <http://example.org/birthDate> "1937-12-21"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/June_13__1911> <http://example.org/bornIn> <http://example.org/San_Francisco> .
-<http://example.org/Isaac_Barrow> <http://example.org/steer> <http://example.org/the_day> .
-<http://example.org/Jean> <http://example.org/survive> <http://example.org/Janet_Landis> .
-<http://example.org/Newton> <http://example.org/collaboratedWith> <http://example.org/Catherine> .
-<http://example.org/wd_Q333> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/Isaac_Newton> <http://example.org/studiedAt> <http://example.org/wd_Q35794> .
 <http://example.org/1937> <http://example.org/authorOf> <http://example.org/Mother_Nature> .
-<http://example.org/25_December_1642> <http://example.org/expect> <http://example.org/Newton> .
-<http://example.org/Florence> <http://example.org/lodge> <http://example.org/Galileo> .
-<http://example.org/1613> <http://example.org/authorOf> <http://example.org/Pisa> .
-<http://example.org/James> <http://example.org/fight> <http://example.org/Parliament> .
-<http://example.org/Copernicus> <http://example.org/workedAt> <http://example.org/wd_Q189441> .
-<http://example.org/the_medieval_ages> <http://example.org/see> <http://example.org/Aristotle> .
-<http://example.org/Walter> <http://example.org/want> <http://example.org/Italy> .
-<http://example.org/1990> <http://example.org/workedAt> <http://example.org/Luis_Alvarez_s> .
-<http://example.org/Luis_Alvarez> <http://example.org/studiedAt> <http://example.org/wd_Q49108> .
-<http://example.org/Galileo> <http://example.org/bornIn> <http://example.org/wd_Q13375> .
-<http://example.org/Galileo> <http://example.org/diedIn> <http://example.org/wd_Q2031761> .
-<http://example.org/Isaac_Newton> <http://example.org/workedAt> <http://example.org/wd_Q35794> .
-<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/the_University_of_California_s> .
-<http://example.org/1990> <http://example.org/workedAt> <http://example.org/two_years> .
-<http://example.org/wd_Q3138607> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Robert_Hooke> <http://example.org/diedIn> <http://example.org/wd_Q84> .
-<http://example.org/1937> <http://example.org/authorOf> <http://example.org/Alvarez> .
-<http://example.org/wd_Q7754> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/Alexander_the_Great> <http://example.org/influencedBy> <http://example.org/wd_Q868> .
-<http://example.org/Vincenzo_Viviani> <http://example.org/memberOf> <http://example.org/January_8__1642> .
-<http://example.org/Aristotle> <http://example.org/think> <http://example.org/Alexander> .
-<http://example.org/c__1565_1616> <http://example.org/turn> <http://example.org/Inquisition> .
-<http://example.org/Los_Alamos> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
-<http://example.org/1934> <http://example.org/studiedAt> <http://example.org/1936> .
-<http://example.org/1953> <http://example.org/collaboratedWith> <http://example.org/Alvarez> .
-<http://example.org/Madison_School> <http://example.org/begin> <http://example.org/Polytechnic_High_School> .
-<http://example.org/Newton> <http://example.org/expect> <http://example.org/Woolsthorpe> .
-<http://example.org/mid_1693> <http://example.org/suffer> <http://example.org/Newton> .
-<http://example.org/James_Chadwick> <http://example.org/workedAt> <http://example.org/Carl_Anderson> .
-<http://example.org/Madison_School> <http://example.org/begin> <http://example.org/San_Francisco> .
-<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/c__1590_1671> .
-<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/342_BC> .
-<http://example.org/wd_Q99951011> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
-<http://example.org/Newton> <http://example.org/save> <http://example.org/Britain> .
-<http://example.org/Copernicus> <http://example.org/influencedBy> <http://example.org/wd_Q969370> .
-<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/Los_Alamos> .
-<http://example.org/Newton> <http://example.org/memberOf> <http://example.org/the_Royal_Society> .
-<http://example.org/Leibniz> <http://example.org/bornIn> <http://example.org/wd_Q2079> .
-<http://example.org/Galileo> <http://example.org/workedAt> <http://example.org/a_decade> .
-<http://example.org/two_years> <http://example.org/workedAt> <http://example.org/Alvarez> .
-<http://example.org/the_European_Renaissance> <http://example.org/influencedBy> <http://example.org/Isaac_Newton> .
-<http://example.org/the_late_1940s> <http://example.org/knownFor> <http://example.org/1950> .
-<http://example.org/The_End__Luis_Alvarez> <http://example.org/diedIn> <http://example.org/September_1__1988> .
-<http://example.org/Netherlands> <http://example.org/spirit> <http://example.org/1638> .
-<http://example.org/wd_Q15631401> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/Italy> <http://example.org/spirit> <http://example.org/Netherlands> .
-<http://example.org/Paolo_Antonio_Foscarini> <http://example.org/turn> <http://example.org/c__1565_1616> .
-<http://example.org/Aristotle> <http://example.org/birthDate> "-0383-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Salviati> <http://example.org/collaboratedWith> <http://example.org/Galileo> .
-<http://example.org/Plato> <http://example.org/diedIn> <http://example.org/wd_Q1524> .
-<http://example.org/15> <http://example.org/change> <http://example.org/Minnesota> .
-<http://example.org/wd_Q1524> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
-<http://example.org/Salviati> <http://example.org/collaboratedWith> <http://example.org/Sagredo> .
-<http://example.org/Robert_Hooke> <http://example.org/workedAt> <http://example.org/wd_Q123885> .
-<http://example.org/1932> <http://example.org/studiedAt> <http://example.org/1936> .
-<http://example.org/wd_Q34433> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
-<http://example.org/John_Flamsteed> <http://example.org/try> <http://example.org/Flamsteed> .
-<http://example.org/Alexander_the_Great> <http://example.org/birthDate> "-0355-07-1"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/1936> <http://example.org/workedAt> <http://example.org/Radiation_Laboratory> .
-<http://example.org/wd_Q177524> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/wd_Q329157> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Society" .
-<http://example.org/Leiden> <http://example.org/spirit> <http://example.org/Netherlands> .
-<http://example.org/Galileo> <http://example.org/knownFor> <http://example.org/wd_Q333> .
-<http://example.org/Galileo> <http://example.org/studiedAt> <http://example.org/wd_Q645663> .
-<http://example.org/Rome> <http://example.org/interrupt> <http://example.org/Galileo> .
-<http://example.org/the_Royal_Society> <http://example.org/reproduce> <http://example.org/Newton> .
-<http://example.org/15> <http://example.org/change> <http://example.org/Rochester> .
-<http://example.org/Rochester_High_School> <http://example.org/studiedAt> <http://example.org/the_University_of_Chicago> .
-<http://example.org/Vatican> <http://example.org/note> <http://example.org/Inquisition> .
-<http://example.org/wd_Q123397> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
-<http://example.org/Socrates> <http://example.org/bornIn> <http://example.org/Athens> .
-<http://example.org/Florence> <http://example.org/lodge> <http://example.org/Rome> .
-<http://example.org/Alexander> <http://example.org/diedIn> <http://example.org/Aristotle> .
-<http://example.org/the_medieval_period> <http://example.org/influencedBy> <http://example.org/the_European_Renaissance> .
-<http://example.org/1926> <http://example.org/change> <http://example.org/15> .
-<http://example.org/Hooke> <http://example.org/try> <http://example.org/John_Flamsteed> .
-<http://example.org/Alvarez> <http://example.org/knownFor> <http://example.org/Germany> .
-<http://example.org/Leibniz> <http://example.org/studiedAt> <http://example.org/wd_Q154561> .
-<http://example.org/Hooke> <http://example.org/try> <http://example.org/Flamsteed> .
-<http://example.org/New_Mexico> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
-<http://example.org/Luis_Alvarez_s> <http://example.org/workedAt> <http://example.org/Alvarez> .
-<http://example.org/Rome> <http://example.org/turn> <http://example.org/Paolo_Antonio_Foscarini> .
-<http://example.org/Newton> <http://example.org/take> <http://example.org/two_years> .
-<http://example.org/Luis_Walter_Alvarez> <http://example.org/bornIn> <http://example.org/California> .
-<http://example.org/wd_Q816425> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/Bachelor_of_Science> .
-<http://example.org/1932> <http://example.org/studiedAt> <http://example.org/1934> .
-<http://example.org/1944> <http://example.org/workedAt> <http://example.org/Alvarez> .
-<http://example.org/Aristotle> <http://example.org/oppose> <http://example.org/Galileo> .
-<http://example.org/Newton> <http://example.org/sit> <http://example.org/Cambridge_University> .
-<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/Florence> .
-<http://example.org/Galileo> <http://example.org/note> <http://example.org/Vatican> .
-<http://example.org/Newton> <http://example.org/hunt> <http://example.org/Descartes> .
-<http://example.org/Aristotle> <http://example.org/studiedAt> <http://example.org/Plato> .
-<http://example.org/the_year> <http://example.org/workedAt> <http://example.org/Carl_Anderson> .
-<http://example.org/Paris> <http://example.org/notice> <http://example.org/Georges_Cuvier> .
-<http://example.org/Newton> <http://example.org/expect> <http://example.org/Lincolnshire> .
-<http://example.org/wd_Q123885> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Galileo> <http://example.org/workedAt> <http://example.org/wd_Q193510> .
-<http://example.org/Maffeo_Cardinal_Barberini> <http://example.org/workedAt> <http://example.org/Galileo> .
-<http://example.org/Newton> <http://example.org/sit> <http://example.org/James_II> .
-<http://example.org/Aristotle> <http://example.org/include> <http://example.org/Socrates> .
-<http://example.org/Isaac_Newton> <http://example.org/influencedBy> <http://example.org/wd_Q9191> .
-<http://example.org/Leibniz> <http://example.org/influencedBy> <http://example.org/wd_Q36330> .
-<http://example.org/wd_Q5891> <http://www.w3.org/2000/01/rdf-schema#label> "Socrates" .
-<http://example.org/c__1590_1671> <http://example.org/workedAt> <http://example.org/Florence> .
-<http://example.org/two_years> <http://example.org/workedAt> <http://example.org/Luis_Alvarez_s> .
-<http://example.org/Rome> <http://example.org/turn> <http://example.org/Inquisition> .
-<http://example.org/Plato> <http://example.org/bornIn> <http://example.org/wd_Q1524> .
-<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
-<http://example.org/Trinity_College> <http://example.org/studiedAt> <http://example.org/Cambridge> .
-<http://example.org/323_BC> <http://example.org/diedIn> <http://example.org/Athens> .
-<http://example.org/Newton> <http://example.org/begin> <http://example.org/Gottfried_Leibniz> .
-<http://example.org/Florence> <http://example.org/knownFor> <http://example.org/wd_Q129372> .
 <http://example.org/One_day> <http://example.org/collaboratedWith> <http://example.org/1953> .
-<http://example.org/Alexander_the_Great> <http://example.org/bornIn> <http://example.org/wd_Q213679> .
-<http://example.org/1936> <http://example.org/workedAt> <http://example.org/the_University_of_California_s> .
-<http://example.org/Robert_Hooke> <http://example.org/deathDate> "1703-03-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/wd_Q2428909> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
-<http://example.org/Socrates> <http://example.org/birthDate> "-0469-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/William_Stukeley> <http://example.org/din> <http://example.org/Woolsthorpe> .
-<http://example.org/Socrates> <http://example.org/deathDate> "-0398-02-1"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/342_BC> <http://example.org/workedAt> <http://example.org/Alexander_the_Great> .
-<http://example.org/Galileo> <http://example.org/collaboratedWith> <http://example.org/Simplicio> .
+<http://example.org/Bachelor_of_Science> <http://example.org/studiedAt> <http://example.org/the_University_of_Chicago> .
 <http://example.org/Galileo> <http://example.org/convene> <http://example.org/Inquisition> .
-<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/Arcetri> .
-<http://example.org/Robert_Hooke> <http://example.org/knownFor> <http://example.org/wd_Q816425> .
-<http://example.org/Leibniz> <http://example.org/diedIn> <http://example.org/wd_Q1715> .
-<http://example.org/Plato> <http://example.org/studiedAt> <http://example.org/Socrates> .
-<http://example.org/1990> <http://example.org/workedAt> <http://example.org/Mexico> .
-<http://example.org/wd_Q93038> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Donald> <http://example.org/survive> <http://example.org/Helen> .
-<http://example.org/Rome> <http://example.org/lodge> <http://example.org/Galileo> .
-<http://example.org/Salviati> <http://example.org/collaboratedWith> <http://example.org/Simplicio> .
-<http://example.org/The_End__Luis_Alvarez> <http://example.org/diedIn> <http://example.org/the_age_of_77> .
-<http://example.org/wd_Q35794> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/Luis_Alvarez> <http://example.org/influencedBy> <http://example.org/wd_Q93038> .
-<http://example.org/Chicago> <http://example.org/studiedAt> <http://example.org/1936> .
-<http://example.org/Royal_Society> <http://example.org/din> <http://example.org/Woolsthorpe> .
-<http://example.org/wd_Q11023> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Alexander_the_Great> <http://example.org/workedAt> <http://example.org/Macedonia> .
-<http://example.org/Plato> <http://example.org/birthDate> "-0428-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/John_Locke> <http://example.org/authorOf> <http://example.org/wd_Q231949> .
+<http://example.org/Florence> <http://example.org/lodge> <http://example.org/Galileo> .
+<http://example.org/wd_Q7754> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/John_Flamsteed> <http://example.org/try> <http://example.org/Flamsteed> .
+<http://example.org/c__1590_1671> <http://example.org/workedAt> <http://example.org/Arcetri> .
+<http://example.org/Copernicus> <http://example.org/knownFor> <http://example.org/wd_Q395> .
+<http://example.org/Maffeo_Cardinal_Barberini> <http://example.org/workedAt> <http://example.org/Urban_VIII> .
+<http://example.org/Trinity_College> <http://example.org/studiedAt> <http://example.org/Cambridge> .
+<http://example.org/Copernicus> <http://example.org/bornIn> <http://example.org/wd_Q47554> .
+<http://example.org/Newton> <http://example.org/hunt> <http://example.org/Descartes> .
+<http://example.org/wd_Q15631401> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/wd_Q5891> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
 <http://example.org/John_Locke> <http://example.org/bornIn> <http://example.org/wd_Q1825419> .
-<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Siena> .
-<http://example.org/Robert_Hooke> <http://example.org/authorOf> <http://example.org/wd_Q170282> .
-<http://example.org/Walter> <http://example.org/decide> <http://example.org/1977> .
-<http://example.org/Galileo> <http://example.org/birthDate> "1564-02-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Aristotle> <http://example.org/studiedAt> <http://example.org/wd_Q193093> .
-<http://example.org/Athens> <http://example.org/diedIn> <http://example.org/Aristotle> .
-<http://example.org/wd_Q193510> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
-<http://example.org/Luis_Alvarez> <http://example.org/workedAt> <http://example.org/wd_Q3138607> .
-<http://example.org/wd_Q74263> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
-<http://example.org/Alexander_the_Great> <http://example.org/diedIn> <http://example.org/wd_Q5684> .
-<http://example.org/John_Locke> <http://example.org/diedIn> <http://example.org/wd_Q2233631> .
-<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/New_Mexico> .
-<http://example.org/wd_Q840924> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
-<http://example.org/Luis_Alvarez> <http://example.org/knownFor> <http://example.org/wd_Q840924> .
-<http://example.org/25_December_1642> <http://example.org/expect> <http://example.org/Woolsthorpe> .
-<http://example.org/Newton> <http://example.org/claim> <http://example.org/20_years_before> .
-<http://example.org/Stagira__Macedonia> <http://example.org/crumble> <http://example.org/Greece> .
-<http://example.org/Newton> <http://example.org/steer> <http://example.org/the_day> .
-<http://example.org/Athens> <http://example.org/knownFor> <http://example.org/wd_Q129372> .
-<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/wd_Q859> .
-<http://example.org/342_BC> <http://example.org/workedAt> <http://example.org/Aristotle> .
-<http://example.org/Grantham> <http://example.org/seek> <http://example.org/Newton> .
-<http://example.org/wd_Q1715> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
-<http://example.org/Walter> <http://example.org/survive> <http://example.org/Jean> .
-<http://example.org/Simplicio> <http://example.org/give> <http://example.org/Urban_VIII> .
-<http://example.org/1613> <http://example.org/authorOf> <http://example.org/Benedetto_Castelli> .
+<http://example.org/1943> <http://example.org/knownFor> <http://example.org/Germany> .
+<http://example.org/wd_Q859> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
+<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/1928> .
+<http://example.org/1932> <http://example.org/workedAt> <http://example.org/Carl_Anderson> .
+<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/c__1590_1671> .
+<http://example.org/323_BC> <http://example.org/diedIn> <http://example.org/Athens> .
 <http://example.org/Robert_Hooke> <http://example.org/birthDate> "1635-07-28"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/Florence> .
-<http://example.org/Plato> <http://example.org/include> <http://example.org/Aristotle> .
-<http://example.org/wd_Q150008> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Arcetri> .
 <http://example.org/wd_Q5684> <http://www.w3.org/2000/01/rdf-schema#label> "Alexander the Great" .
-<http://example.org/Robert_Hooke> <http://example.org/challenge> <http://example.org/Newton> .
-<http://example.org/Galileo> <http://example.org/memberOf> <http://example.org/January_8__1642> .
-<http://example.org/the_Royal_Mint> <http://example.org/knownFor> <http://example.org/Newton> .
-<http://example.org/Janet_Landis> <http://example.org/survive> <http://example.org/Helen> .
-<http://example.org/Janet_Landis> <http://example.org/survive> <http://example.org/Donald> .
+<http://example.org/1926> <http://example.org/change> <http://example.org/Minnesota> .
+<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Ascanio_Piccolomini> .
+<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/Athens> .
+<http://example.org/1932> <http://example.org/authorOf> <http://example.org/Alvarez> .
+<http://example.org/Galileo> <http://example.org/workedAt> <http://example.org/a_decade> .
+<http://example.org/Aristotle> <http://example.org/think> <http://example.org/Alexander> .
+<http://example.org/wd_Q99951011> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Newton> <http://example.org/claim> <http://example.org/Leibniz> .
+<http://example.org/the_medieval_period> <http://example.org/influencedBy> <http://example.org/Isaac_Newton> .
+<http://example.org/wd_Q329157> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Society" .
+<http://example.org/Alexander_the_Great> <http://example.org/deathDate> "-0322-06-0"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://example.org/Socrates> <http://example.org/diedIn> <http://example.org/wd_Q1524> .
-<http://example.org/Leibniz> <http://example.org/birthDate> "1646-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/Aristotle> <http://example.org/crumble> <http://example.org/384_BC> .
-<http://example.org/Isaac_Newton> <http://example.org/knownFor> <http://example.org/wd_Q833163> .
-<http://example.org/John_Locke> <http://example.org/birthDate> "1632-09-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.org/John_Locke> <http://example.org/knownFor> <http://example.org/wd_Q15631401> .
-<http://example.org/wd_Q193093> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
-<http://example.org/1932> <http://example.org/studiedAt> <http://example.org/Chicago> .
-<http://example.org/Newton> <http://example.org/diedIn> <http://example.org/84> .
-<http://example.org/Plato> <http://example.org/include> <http://example.org/Hippocrates> .
+<http://example.org/Copernicus> <http://example.org/workedAt> <http://example.org/wd_Q189441> .
+<http://example.org/Newton> <http://example.org/memberOf> <http://example.org/the_Royal_Society> .
+<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/Macedonia> .
+<http://example.org/wd_Q3138607> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/Copernicus> <http://example.org/authorOf> <http://example.org/wd_Q675765> .
+<http://example.org/the_medieval_ages> <http://example.org/see> <http://example.org/Aristotle> .
+<http://example.org/early_1954> <http://example.org/put> <http://example.org/Berkeley> .
+<http://example.org/five_nights_in_a_row> <http://example.org/work> <http://example.org/Newton> .
+<http://example.org/Galileo> <http://example.org/interrupt> <http://example.org/Florence> .
+<http://example.org/Alexander_the_Great> <http://example.org/ignore> <http://example.org/Aristotle> .
+<http://example.org/Madison_School> <http://example.org/begin> <http://example.org/San_Francisco> .
+<http://example.org/Stagira__Macedonia> <http://example.org/crumble> <http://example.org/384_BC> .
+<http://example.org/wd_Q93038> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/wd_Q193510> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/wd_Q745967> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/Rome> <http://example.org/lodge> <http://example.org/Galileo> .
+<http://example.org/Luis_Alvarez> <http://example.org/birthDate> "1937-12-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/25_December_1642> <http://example.org/expect> <http://example.org/Lincolnshire> .
+<http://example.org/Rochester_High_School> <http://example.org/studiedAt> <http://example.org/the_University_of_Chicago> .
+<http://example.org/Rome> <http://example.org/turn> <http://example.org/Paolo_Antonio_Foscarini> .
+<http://example.org/Galileo> <http://example.org/collaboratedWith> <http://example.org/Sagredo> .
+<http://example.org/Walter> <http://example.org/survive> <http://example.org/Helen> .
+<http://example.org/Robert_Hooke> <http://example.org/workedAt> <http://example.org/wd_Q43393> .
+<http://example.org/Netherlands> <http://example.org/spirit> <http://example.org/1638> .
+<http://example.org/Galileo> <http://example.org/bornIn> <http://example.org/wd_Q13375> .
+<http://example.org/1936> <http://example.org/workedAt> <http://example.org/the_University_of_California_s> .
+<http://example.org/c__1565_1616> <http://example.org/turn> <http://example.org/Inquisition> .
+<http://example.org/Alvarez> <http://example.org/knownFor> <http://example.org/Germany> .
+<http://example.org/Leibniz> <http://example.org/bornIn> <http://example.org/wd_Q2079> .
+<http://example.org/June_13__1911> <http://example.org/bornIn> <http://example.org/California> .
+<http://example.org/wd_Q213679> <http://www.w3.org/2000/01/rdf-schema#label> "Alexander the Great" .
+<http://example.org/Stagira__Macedonia> <http://example.org/crumble> <http://example.org/Greece> .
 <http://example.org/Alvarez> <http://example.org/put> <http://example.org/Berkeley> .
-<http://example.org/Bachelor_of_Science> <http://example.org/studiedAt> <http://example.org/1928> .
-<http://example.org/wd_Q913> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
-<http://example.org/Newton> <http://example.org/quarrel> <http://example.org/Leibniz> .
-<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/wd_Q219207> .
-<http://example.org/James_II> <http://example.org/sit> <http://example.org/Cambridge_University> .
-<http://example.org/wd_Q131262> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Isaac_Newton> <http://example.org/knownFor> <http://example.org/wd_Q833163> .
+<http://example.org/Luis_Alvarez_s> <http://example.org/workedAt> <http://example.org/Mexico> .
+<http://example.org/wd_Q5891> <http://www.w3.org/2000/01/rdf-schema#label> "Socrates" .
+<http://example.org/wd_Q840924> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/Luis_Alvarez> <http://example.org/deathDate> "2018-12-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/1932> <http://example.org/studiedAt> <http://example.org/1936> .
+<http://example.org/1713> <http://example.org/memberOf> <http://example.org/the_Royal_Society> .
+<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
+<http://example.org/Chicago> <http://example.org/studiedAt> <http://example.org/1936> .
+<http://example.org/wd_Q84> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/Socrates> <http://example.org/deathDate> "-0398-02-1"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/wd_Q15631401> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/1630> <http://example.org/concern> <http://example.org/Galileo> .
+<http://example.org/the_University_of_California_s> <http://example.org/workedAt> <http://example.org/Radiation_Laboratory> .
+<http://example.org/the_European_Renaissance> <http://example.org/influencedBy> <http://example.org/Isaac_Newton> .
 <http://example.org/Luis> <http://example.org/workedAt> <http://example.org/each_year> .
+<http://example.org/1932> <http://example.org/authorOf> <http://example.org/Geiger> .
+<http://example.org/wd_Q3316008> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/John_Locke> <http://example.org/workedAt> <http://example.org/wd_Q5019214> .
+<http://example.org/Luis_Alvarez> <http://example.org/move> <http://example.org/Berkeley> .
+<http://example.org/Robert_Hooke> <http://example.org/studiedAt> <http://example.org/wd_Q34433> .
+<http://example.org/wd_Q288781> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/Plato> <http://example.org/influencedBy> <http://example.org/wd_Q913> .
+<http://example.org/Galileo> <http://example.org/studiedAt> <http://example.org/wd_Q645663> .
+<http://example.org/Plato> <http://example.org/include> <http://example.org/Hippocrates> .
+<http://example.org/Isaac_Newton> <http://example.org/influencedBy> <http://example.org/wd_Q9191> .
+<http://example.org/Royal_Society> <http://example.org/din> <http://example.org/Woolsthorpe> .
+<http://example.org/early_1954> <http://example.org/put> <http://example.org/Alvarez> .
+<http://example.org/Aristotle> <http://example.org/authorOf> <http://example.org/wd_Q69539> .
 <http://example.org/the_University_of_California_s> <http://example.org/workedAt> <http://example.org/Berkeley> .
-<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/Isaac_Newton> .
-<http://example.org/Robert_Hooke> <http://example.org/studiedAt> <http://example.org/wd_Q745967> .
-<http://example.org/Aristotle> <http://example.org/crumble> <http://example.org/Stagira__Macedonia> .
-<http://example.org/Copernicus> <http://example.org/concern> <http://example.org/1543> .
-<http://example.org/Robert_Hooke> <http://example.org/bornIn> <http://example.org/wd_Q2428909> .
-<http://example.org/Luis_Alvarez> <http://example.org/bornIn> <http://example.org/wd_Q586762> .
-<http://example.org/Royal_Society> <http://example.org/knownFor> <http://example.org/wd_Q329157> .
-<http://example.org/Alvarez> <http://example.org/authorOf> <http://example.org/1933> .
-<http://example.org/Walter> <http://example.org/survive> <http://example.org/Janet_Landis> .
-<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/the_medieval_period> .
+<http://example.org/Robert_Hooke> <http://example.org/authorOf> <http://example.org/wd_Q170282> .
+<http://example.org/Newton> <http://example.org/take> <http://example.org/two_years> .
+<http://example.org/Galileo> <http://example.org/collaboratedWith> <http://example.org/Simplicio> .
+<http://example.org/Inquisition> <http://example.org/confront> <http://example.org/1616> .
+<http://example.org/wd_Q333> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/wd_Q846127> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
+<http://example.org/Newton> <http://example.org/sit> <http://example.org/Cambridge_University> .
+<http://example.org/1613> <http://example.org/authorOf> <http://example.org/Benedetto_Castelli> .
+<http://example.org/Jean> <http://example.org/survive> <http://example.org/Helen> .
+<http://example.org/Inquisition> <http://example.org/prepare> <http://example.org/Galileo> .
+<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/Alexander_the_Great> .
+<http://example.org/Copernicus> <http://example.org/influencedBy> <http://example.org/wd_Q969370> .
+<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/New_Mexico> .
+<http://example.org/20_years_before> <http://example.org/claim> <http://example.org/Leibniz> .
+<http://example.org/1936> <http://example.org/workedAt> <http://example.org/Berkeley> .
+<http://example.org/Galileo> <http://example.org/deathDate> "1642-01-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Alvarez> <http://example.org/memberOf> <http://example.org/Walter> .
+<http://example.org/Maffeo_Cardinal_Barberini> <http://example.org/workedAt> <http://example.org/a_decade> .
+<http://example.org/James_Chadwick> <http://example.org/workedAt> <http://example.org/Carl_Anderson> .
+<http://example.org/the_Royal_Society> <http://example.org/reproduce> <http://example.org/Newton> .
+<http://example.org/Copernicus> <http://example.org/knownFor> <http://example.org/wd_Q99951011> .
+<http://example.org/323_BC> <http://example.org/diedIn> <http://example.org/Aristotle> .
+<http://example.org/Los_Alamos> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
+<http://example.org/Macedonia> <http://example.org/workedAt> <http://example.org/Alexander_the_Great> .
+<http://example.org/the_year> <http://example.org/workedAt> <http://example.org/James_Chadwick> .
+<http://example.org/Isaac_Newton> <http://example.org/knownFor> <http://example.org/wd_Q333> .
+<http://example.org/Leibniz> <http://example.org/diedIn> <http://example.org/wd_Q1715> .
+<http://example.org/James_II> <http://example.org/sit> <http://example.org/Cambridge_University> .
+<http://example.org/Lyceum> <http://example.org/seek> <http://example.org/Aristotle> .
+<http://example.org/New_Mexico> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
+<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Helen> .
+<http://example.org/wd_Q154804> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/Sagredo> <http://example.org/collaboratedWith> <http://example.org/Simplicio> .
+<http://example.org/1944> <http://example.org/workedAt> <http://example.org/the_Manhattan_Project> .
+<http://example.org/Leibniz> <http://example.org/authorOf> <http://example.org/wd_Q150008> .
+<http://example.org/Newton> <http://example.org/claim> <http://example.org/20_years_before> .
+<http://example.org/1990> <http://example.org/workedAt> <http://example.org/Alvarez> .
+<http://example.org/wd_Q21235810> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
+<http://example.org/Rome> <http://example.org/turn> <http://example.org/1615> .
+<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/Radiation_Laboratory> .
+<http://example.org/wd_Q1715> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/Newton> <http://example.org/knownFor> <http://example.org/Leibniz> .
+<http://example.org/Aristotle> <http://example.org/workedAt> <http://example.org/342_BC> .
+<http://example.org/Italy> <http://example.org/spirit> <http://example.org/Leiden> .
+<http://example.org/wd_Q35794> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/Salviati> <http://example.org/collaboratedWith> <http://example.org/Galileo> .
+<http://example.org/John_Locke> <http://example.org/influencedBy> <http://example.org/wd_Q336002> .
+<http://example.org/Alexander> <http://example.org/seek> <http://example.org/Lyceum> .
+<http://example.org/wd_Q12271> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/Maffeo_Cardinal_Barberini> <http://example.org/workedAt> <http://example.org/Galileo> .
+<http://example.org/Orazio_Grassi> <http://example.org/enter> <http://example.org/the_Collegio_Romano> .
+<http://example.org/two_years> <http://example.org/workedAt> <http://example.org/Alvarez> .
+<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/Siena> .
+<http://example.org/Alexander_the_Great> <http://example.org/influencedBy> <http://example.org/wd_Q868> .
+<http://example.org/wd_Q1524> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
+<http://example.org/the_early_1800s> <http://example.org/notice> <http://example.org/Georges_Cuvier> .
+<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/wd_Q219207> .
+<http://example.org/the_year> <http://example.org/workedAt> <http://example.org/Carl_Anderson> .
+<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/Berkeley> .
+<http://example.org/1936> <http://example.org/workedAt> <http://example.org/Alvarez> .
+<http://example.org/Aristotle> <http://example.org/crumble> <http://example.org/384_BC> .
+<http://example.org/Newton> <http://example.org/begin> <http://example.org/Gottfried_Leibniz> .
+<http://example.org/Aristotle> <http://example.org/bornIn> <http://example.org/wd_Q846127> .
+<http://example.org/wd_Q868> <http://www.w3.org/2000/01/rdf-schema#label> "Alexander the Great" .
+<http://example.org/the_late_1940s> <http://example.org/knownFor> <http://example.org/1950> .
+<http://example.org/wd_Q1524> <http://www.w3.org/2000/01/rdf-schema#label> "Socrates" .
+<http://example.org/Glaser> <http://example.org/collaboratedWith> <http://example.org/Alvarez> .
+<http://example.org/Aristotle> <http://example.org/studiedAt> <http://example.org/Plato> .
+<http://example.org/Aristotle> <http://example.org/include> <http://example.org/Socrates> .
+<http://example.org/1934> <http://example.org/studiedAt> <http://example.org/1936> .
+<http://example.org/Los_Alamos> <http://example.org/workedAt> <http://example.org/New_Mexico> .
+<http://example.org/James> <http://example.org/fight> <http://example.org/Parliament> .
 <http://example.org/the_centuries> <http://example.org/take> <http://example.org/Galileo> .
+<http://example.org/Hooke> <http://example.org/try> <http://example.org/Flamsteed> .
+<http://example.org/Aristotle> <http://example.org/crumble> <http://example.org/Greece> .
+<http://example.org/1613> <http://example.org/authorOf> <http://example.org/Pisa> .
+<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/Los_Alamos> .
+<http://example.org/25_December_1642> <http://example.org/expect> <http://example.org/Woolsthorpe> .
+<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/Florence> .
+<http://example.org/1944> <http://example.org/workedAt> <http://example.org/New_Mexico> .
+<http://example.org/Galileo> <http://example.org/note> <http://example.org/Vatican> .
+<http://example.org/wd_Q833163> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/Aristotle> <http://example.org/studiedAt> <http://example.org/wd_Q193093> .
+<http://example.org/wd_Q333> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/Rochester_High_School> <http://example.org/studiedAt> <http://example.org/Bachelor_of_Science> .
+<http://example.org/wd_Q2031761> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/Hooke> <http://example.org/try> <http://example.org/John_Flamsteed> .
+<http://example.org/Foscarini> <http://example.org/ban> <http://example.org/Johannes_Kepler_s> .
+<http://example.org/Alexander> <http://example.org/diedIn> <http://example.org/Aristotle> .
+<http://example.org/Luis_Alvarez> <http://example.org/influencedBy> <http://example.org/wd_Q93038> .
+<http://example.org/wd_Q5891> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/Alexander_the_Great> <http://example.org/bornIn> <http://example.org/wd_Q213679> .
+<http://example.org/Newton> <http://example.org/quarrel> <http://example.org/Leibniz> .
+<http://example.org/Galileo> <http://example.org/note> <http://example.org/Inquisition> .
+<http://example.org/wd_Q5019214> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/Arcetri> .
+<http://example.org/the_age_of_77> <http://example.org/diedIn> <http://example.org/September_1__1988> .
+<http://example.org/wd_Q505549> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/William_Stukeley> <http://example.org/din> <http://example.org/Newton> .
+<http://example.org/William_Stukeley> <http://example.org/din> <http://example.org/Woolsthorpe> .
+<http://example.org/Cambridge> <http://example.org/steer> <http://example.org/the_day> .
+<http://example.org/June_13__1911> <http://example.org/bornIn> <http://example.org/San_Francisco> .
+<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/Rochester_High_School> .
+<http://example.org/Christina> <http://example.org/discuss> <http://example.org/Galileo> .
+<http://example.org/Plato> <http://example.org/knownFor> <http://example.org/wd_Q316> .
+<http://example.org/Plato> <http://example.org/include> <http://example.org/Aristotle> .
+<http://example.org/Inquisition> <http://example.org/note> <http://example.org/Vatican> .
+<http://example.org/342_BC> <http://example.org/workedAt> <http://example.org/Macedonia> .
+<http://example.org/Siena> <http://example.org/workedAt> <http://example.org/Florence> .
+<http://example.org/Athens> <http://example.org/knownFor> <http://example.org/wd_Q129372> .
+<http://example.org/wd_Q123397> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
+<http://example.org/wd_Q586762> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/Newton> <http://example.org/din> <http://example.org/Woolsthorpe> .
+<http://example.org/Luis_Alvarez> <http://example.org/authorOf> <http://example.org/wd_Q177524> .
+<http://example.org/Newton> <http://example.org/studiedAt> <http://example.org/Trinity_College> .
+<http://example.org/wd_Q316> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
+<http://example.org/Luis_Alvarez> <http://example.org/studiedAt> <http://example.org/wd_Q49108> .
+<http://example.org/Aristotle> <http://example.org/think> <http://example.org/335_BC> .
+<http://example.org/Ascanio_Piccolomini> <http://example.org/workedAt> <http://example.org/Florence> .
+<http://example.org/1943> <http://example.org/knownFor> <http://example.org/Alvarez> .
+<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/1632> .
+<http://example.org/wd_Q129372> <http://www.w3.org/2000/01/rdf-schema#label> "Athens" .
+<http://example.org/Paris> <http://example.org/notice> <http://example.org/Georges_Cuvier> .
+<http://example.org/Plato> <http://example.org/bornIn> <http://example.org/wd_Q1524> .
+<http://example.org/Plato> <http://example.org/authorOf> <http://example.org/wd_Q123397> .
+<http://example.org/Galileo> <http://example.org/authorOf> <http://example.org/Bellarmine> .
+<http://example.org/John_Locke> <http://example.org/knownFor> <http://example.org/wd_Q15631401> .
+<http://example.org/Newton> <http://example.org/diedIn> <http://example.org/84> .
+<http://example.org/Leibniz> <http://example.org/knownFor> <http://example.org/wd_Q15631401> .
+<http://example.org/Cambridge_University> <http://example.org/close> <http://example.org/Newton> .
+<http://example.org/Leibniz> <http://example.org/birthDate> "1646-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Newton> <http://example.org/expect> <http://example.org/Lincolnshire> .
+<http://example.org/Luis_Walter_Alvarez> <http://example.org/bornIn> <http://example.org/June_13__1911> .
+<http://example.org/Aristotle> <http://example.org/authorOf> <http://example.org/Alexander> .
+<http://example.org/wd_Q49108> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/Paolo_Antonio_Foscarini> <http://example.org/turn> <http://example.org/c__1565_1616> .
+<http://example.org/wd_Q2233631> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/1944> <http://example.org/workedAt> <http://example.org/Los_Alamos> .
+<http://example.org/Socrates> <http://example.org/bornIn> <http://example.org/Athens> .
+<http://example.org/John_Locke> <http://example.org/diedIn> <http://example.org/wd_Q2233631> .
+<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Walter> .
+<http://example.org/wd_Q99951011> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/Newton> <http://example.org/save> <http://example.org/Britain> .
+<http://example.org/Luis_Alvarez> <http://example.org/diedIn> <http://example.org/wd_Q505549> .
+<http://example.org/wd_Q9191> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/Donald> <http://example.org/survive> <http://example.org/Helen> .
+<http://example.org/wd_Q219207> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/15> <http://example.org/change> <http://example.org/Rochester> .
+<http://example.org/wd_Q336002> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/Asaro> <http://example.org/knownFor> <http://example.org/Helen_Michel> .
+<http://example.org/Galileo> <http://example.org/mention> <http://example.org/Robert_Cardinal_Bellarmine> .
+<http://example.org/Copernicus> <http://example.org/deathDate> "1543-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Alexander> <http://example.org/diedIn> <http://example.org/Athens> .
+<http://example.org/Copernicus> <http://example.org/concern> <http://example.org/1543> .
+<http://example.org/Alexander_the_Great> <http://example.org/birthDate> "-0355-07-1"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Madison_School> <http://example.org/begin> <http://example.org/Polytechnic_High_School> .
+<http://example.org/wd_Q177524> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/342_BC> <http://example.org/workedAt> <http://example.org/Alexander_the_Great> .
+<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/the_University_of_Chicago> .
+<http://example.org/Royal_Society> <http://example.org/din> <http://example.org/Newton> .
+<http://example.org/Walter> <http://example.org/survive> <http://example.org/Janet_Landis> .
+<http://example.org/Galileo> <http://example.org/memberOf> <http://example.org/Vincenzo_Viviani> .
+<http://example.org/Alexander_the_Great> <http://example.org/diedIn> <http://example.org/wd_Q5684> .
+<http://example.org/Aristotle> <http://example.org/diedIn> <http://example.org/wd_Q21235810> .
+<http://example.org/John_Locke> <http://example.org/studiedAt> <http://example.org/wd_Q745967> .
+<http://example.org/Isaac_Newton> <http://example.org/bornIn> <http://example.org/wd_Q3316008> .
+<http://example.org/Alvarez> <http://example.org/workedAt> <http://example.org/the_University_of_California_s> .
+<http://example.org/wd_Q13375> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/Galileo> <http://example.org/birthDate> "1564-02-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/1932> <http://example.org/studiedAt> <http://example.org/Chicago> .
+<http://example.org/wd_Q43393> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/Socrates> <http://example.org/birthDate> "-0469-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/John_Locke> <http://example.org/authorOf> <http://example.org/wd_Q231949> .
+<http://example.org/Janet_Landis> <http://example.org/survive> <http://example.org/Donald> .
+<http://example.org/Greece> <http://example.org/crumble> <http://example.org/384_BC> .
+<http://example.org/342_BC> <http://example.org/workedAt> <http://example.org/Aristotle> .
+<http://example.org/Rome> <http://example.org/interrupt> <http://example.org/Florence> .
+<http://example.org/Isaac_Newton> <http://example.org/deathDate> "1727-03-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Florence> <http://example.org/interrupt> <http://example.org/Rome> .
+<http://example.org/Arcetri> <http://example.org/workedAt> <http://example.org/Florence> .
+<http://example.org/Mexico> <http://example.org/workedAt> <http://example.org/Alvarez> .
+<http://example.org/1932> <http://example.org/workedAt> <http://example.org/James_Chadwick> .
+<http://example.org/wd_Q15631401> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/1937> <http://example.org/authorOf> <http://example.org/Alvarez> .
+<http://example.org/John_Locke> <http://example.org/knownFor> <http://example.org/wd_Q5891> .
+<http://example.org/mid_1693> <http://example.org/suffer> <http://example.org/Newton> .
+<http://example.org/Paolo_Antonio_Foscarini> <http://example.org/turn> <http://example.org/Inquisition> .
+<http://example.org/Aristotle> <http://example.org/knownFor> <http://example.org/wd_Q5891> .
+<http://example.org/wd_Q1825419> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/Alvarez> <http://example.org/authorOf> <http://example.org/Mother_Nature> .
+<http://example.org/Royal_Society> <http://example.org/knownFor> <http://example.org/wd_Q329157> .
+<http://example.org/Catherine> <http://example.org/collaboratedWith> <http://example.org/his_later_years> .
+<http://example.org/Socrates> <http://example.org/bornIn> <http://example.org/wd_Q1524> .
+<http://example.org/Aristotle> <http://example.org/birthDate> "-0383-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Plato> <http://example.org/include> <http://example.org/Socrates> .
+<http://example.org/Grantham> <http://example.org/seek> <http://example.org/Newton> .
+<http://example.org/San_Francisco> <http://example.org/bornIn> <http://example.org/California> .
+<http://example.org/Rochester> <http://example.org/change> <http://example.org/Minnesota> .
+<http://example.org/wd_Q150008> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/Jean> <http://example.org/survive> <http://example.org/Janet_Landis> .
+<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/c__1590_1671> .
+<http://example.org/Isaac_Newton> <http://example.org/studiedAt> <http://example.org/wd_Q35794> .
+<http://example.org/Athens> <http://example.org/travel> <http://example.org/the_Academy_of_Plato> .
+<http://example.org/Aristotle> <http://example.org/taughtBy> <http://example.org/several_years> .
+<http://example.org/1990> <http://example.org/workedAt> <http://example.org/Mexico> .
+<http://example.org/Aristotle> <http://example.org/oppose> <http://example.org/Galileo> .
+<http://example.org/Alexander_the_Great> <http://example.org/workedAt> <http://example.org/Aristotle> .
+<http://example.org/The_Doc> <http://example.org/enhance> <http://example.org/Luis_Alvarez> .
+<http://example.org/wd_Q34433> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/Galileo> <http://example.org/workedAt> <http://example.org/wd_Q193510> .
+<http://example.org/wd_Q83041> <http://www.w3.org/2000/01/rdf-schema#label> "Socrates" .
+<http://example.org/Luis_Alvarez> <http://example.org/knownFor> <http://example.org/wd_Q11023> .
+<http://example.org/wd_Q675765> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Galileo> <http://example.org/take> <http://example.org/the_centuries> .
+<http://example.org/Leiden> <http://example.org/spirit> <http://example.org/1638> .
 <http://example.org/Copernicus> <http://example.org/diedIn> <http://example.org/wd_Q497115> .
+<http://example.org/the_Royal_Society> <http://example.org/memberOf> <http://example.org/Newton> .
+<http://example.org/Luis_Walter_Alvarez> <http://example.org/bornIn> <http://example.org/California> .
+<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/wd_Q859> .
+<http://example.org/two_years> <http://example.org/workedAt> <http://example.org/Mexico> .
+<http://example.org/Vincenzo_Viviani> <http://example.org/memberOf> <http://example.org/January_8__1642> .
+<http://example.org/Salviati> <http://example.org/collaboratedWith> <http://example.org/Sagredo> .
+<http://example.org/wd_Q497115> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Alexander_the_Great> <http://example.org/workedAt> <http://example.org/342_BC> .
+<http://example.org/Islam> <http://example.org/exert> <http://example.org/Aristotle> .
+<http://example.org/The_End__Luis_Alvarez> <http://example.org/diedIn> <http://example.org/the_age_of_77> .
+<http://example.org/Socrates> <http://example.org/influencedBy> <http://example.org/wd_Q83041> .
+<http://example.org/c__1590_1671> <http://example.org/workedAt> <http://example.org/Florence> .
+<http://example.org/Aristotle> <http://example.org/seek> <http://example.org/Lyceum> .
+<http://example.org/Robert_Hooke> <http://example.org/challenge> <http://example.org/Newton> .
+<http://example.org/wd_Q336> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Society" .
+<http://example.org/Walter> <http://example.org/want> <http://example.org/Italy> .
+<http://example.org/Simplicio> <http://example.org/give> <http://example.org/Urban_VIII> .
+<http://example.org/wd_Q913> <http://www.w3.org/2000/01/rdf-schema#label> "Plato" .
+<http://example.org/Newton> <http://example.org/expect> <http://example.org/Woolsthorpe> .
+<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Janet_Landis> .
+<http://example.org/Royal_Society> <http://example.org/knownFor> <http://example.org/wd_Q336> .
+<http://example.org/25_December_1642> <http://example.org/expect> <http://example.org/Newton> .
+<http://example.org/Paris> <http://example.org/notice> <http://example.org/the_early_1800s> .
+<http://example.org/Leiden> <http://example.org/spirit> <http://example.org/Netherlands> .
+<http://example.org/Aristotle> <http://example.org/deathDate> "-0321-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/1926> <http://example.org/change> <http://example.org/Rochester> .
+<http://example.org/1615> <http://example.org/turn> <http://example.org/Paolo_Antonio_Foscarini> .
+<http://example.org/Isaac_Newton> <http://example.org/diedIn> <http://example.org/wd_Q288781> .
+<http://example.org/The_End__Luis_Alvarez> <http://example.org/diedIn> <http://example.org/September_1__1988> .
+<http://example.org/One_day> <http://example.org/collaboratedWith> <http://example.org/Alvarez> .
+<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Florence> .
+<http://example.org/Florence> <http://example.org/authorOf> <http://example.org/1632> .
+<http://example.org/a_decade> <http://example.org/workedAt> <http://example.org/Urban_VIII> .
+<http://example.org/Robert_Hooke> <http://example.org/diedIn> <http://example.org/wd_Q84> .
+<http://example.org/wd_Q11023> <http://www.w3.org/2000/01/rdf-schema#label> "Lawrence Roberts" .
+<http://example.org/Siena> <http://example.org/workedAt> <http://example.org/Arcetri> .
+<http://example.org/Italy> <http://example.org/spirit> <http://example.org/1638> .
+<http://example.org/Galileo> <http://example.org/knownFor> <http://example.org/wd_Q99951011> .
+<http://example.org/John_Locke> <http://example.org/deathDate> "1704-11-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Florence> <http://example.org/lodge> <http://example.org/Rome> .
+<http://example.org/Simplicio> <http://example.org/collaboratedWith> <http://example.org/Galileo> .
+<http://example.org/Walter> <http://example.org/survive> <http://example.org/Jean> .
+<http://example.org/Robert_Hooke> <http://example.org/deathDate> "1703-03-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Salviati> <http://example.org/collaboratedWith> <http://example.org/Simplicio> .
+<http://example.org/Copernicus> <http://example.org/studiedAt> <http://example.org/wd_Q131262> .
+<http://example.org/Newton> <http://example.org/knownFor> <http://example.org/many_years> .
+<http://example.org/Galileo> <http://example.org/diedIn> <http://example.org/wd_Q2031761> .
+<http://example.org/wd_Q129372> <http://www.w3.org/2000/01/rdf-schema#label> "Florence" .
+<http://example.org/Luis_Alvarez_s> <http://example.org/workedAt> <http://example.org/Alvarez> .
+<http://example.org/Walter> <http://example.org/decide> <http://example.org/1977> .
+<http://example.org/Aristotle> <http://example.org/studiedAt> <http://example.org/Socrates> .
+<http://example.org/Walter> <http://example.org/survive> <http://example.org/Donald> .
+<http://example.org/Galileo> <http://example.org/knownFor> <http://example.org/wd_Q333> .
+<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/the_medieval_period> .
+<http://example.org/Plato> <http://example.org/birthDate> "-0428-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Luis> <http://example.org/begin> <http://example.org/San_Francisco> .
+<http://example.org/Alvarez> <http://example.org/think> <http://example.org/Glaser> .
+<http://example.org/Socrates> <http://example.org/knownFor> <http://example.org/wd_Q5891> .
+<http://example.org/Florence> <http://example.org/knownFor> <http://example.org/wd_Q129372> .
+<http://example.org/wd_Q2428909> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/Leibniz> <http://example.org/workedAt> <http://example.org/wd_Q154804> .
+<http://example.org/wd_Q2079> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/wd_Q859> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/wd_Q154561> <http://www.w3.org/2000/01/rdf-schema#label> "Gottfried Wilhelm Leibniz" .
+<http://example.org/Italy> <http://example.org/spirit> <http://example.org/Netherlands> .
+<http://example.org/wd_Q645663> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Galilei" .
+<http://example.org/San_Francisco> <http://example.org/begin> <http://example.org/Polytechnic_High_School> .
+<http://example.org/Robert_Hooke> <http://example.org/knownFor> <http://example.org/wd_Q12271> .
+<http://example.org/Luis> <http://example.org/studiedAt> <http://example.org/Bachelor_of_Science> .
+<http://example.org/Woolsthorpe> <http://example.org/expect> <http://example.org/Lincolnshire> .
+<http://example.org/wd_Q47554> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Alexander> <http://example.org/diedIn> <http://example.org/323_BC> .
+<http://example.org/1615> <http://example.org/turn> <http://example.org/c__1565_1616> .
+<http://example.org/Aristotle> <http://example.org/diedIn> <http://example.org/Athens> .
+<http://example.org/Leibniz> <http://example.org/influencedBy> <http://example.org/wd_Q859> .
+<http://example.org/Sagredo> <http://example.org/collaboratedWith> <http://example.org/Galileo> .
+<http://example.org/Luis_Alvarez> <http://example.org/bornIn> <http://example.org/wd_Q586762> .
+<http://example.org/wd_Q170282> <http://www.w3.org/2000/01/rdf-schema#label> "Robert Hooke" .
+<http://example.org/Isaac_Barrow> <http://example.org/steer> <http://example.org/Newton> .
+<http://example.org/Leibniz> <http://example.org/deathDate> "1716-11-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/the_medieval_period> <http://example.org/influencedBy> <http://example.org/the_European_Renaissance> .
+<http://example.org/Rome> <http://example.org/turn> <http://example.org/c__1565_1616> .
+<http://example.org/1936> <http://example.org/workedAt> <http://example.org/Radiation_Laboratory> .
+<http://example.org/1926> <http://example.org/change> <http://example.org/15> .
+<http://example.org/Plato> <http://example.org/deathDate> "-0348-01-0"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Robert_Hooke> <http://example.org/bornIn> <http://example.org/wd_Q2428909> .
+<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/Isaac_Newton> .
+<http://example.org/Galileo> <http://example.org/workedAt> <http://example.org/Urban_VIII> .
+<http://example.org/Bachelor_of_Science> <http://example.org/studiedAt> <http://example.org/1928> .
+<http://example.org/Alexander> <http://example.org/seek> <http://example.org/Aristotle> .
+<http://example.org/Alvarez> <http://example.org/authorOf> <http://example.org/1933> .
+<http://example.org/Alexander_the_Great> <http://example.org/workedAt> <http://example.org/Macedonia> .
+<http://example.org/Isaac_Newton> <http://example.org/birthDate> "1643-01-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Luis> <http://example.org/begin> <http://example.org/Polytechnic_High_School> .
+<http://example.org/15> <http://example.org/change> <http://example.org/Minnesota> .
+<http://example.org/Florence> <http://example.org/interrupt> <http://example.org/Galileo> .
+<http://example.org/Athens> <http://example.org/diedIn> <http://example.org/Aristotle> .
+<http://example.org/1990> <http://example.org/workedAt> <http://example.org/two_years> .
+<http://example.org/Plato> <http://example.org/studiedAt> <http://example.org/Socrates> .
+<http://example.org/Jean> <http://example.org/survive> <http://example.org/Donald> .
+<http://example.org/wd_Q189441> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/San_Francisco> <http://example.org/begin> <http://example.org/Madison_School> .
+<http://example.org/Radiation_Laboratory> <http://example.org/workedAt> <http://example.org/Berkeley> .
+<http://example.org/Newton> <http://example.org/collaboratedWith> <http://example.org/his_later_years> .
+<http://example.org/1932> <http://example.org/workedAt> <http://example.org/the_year> .
+<http://example.org/wd_Q231949> <http://www.w3.org/2000/01/rdf-schema#label> "John Locke" .
+<http://example.org/the_University_of_Chicago> <http://example.org/studiedAt> <http://example.org/1928> .
+<http://example.org/Aristotle> <http://example.org/include> <http://example.org/Hippocrates> .
+<http://example.org/Isaac_Newton> <http://example.org/workedAt> <http://example.org/wd_Q35794> .
+<http://example.org/Socrates> <http://example.org/include> <http://example.org/Hippocrates> .
+<http://example.org/wd_Q395> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/John_Locke> <http://example.org/apologise> <http://example.org/Samuel_Pepys> .
+<http://example.org/Leibniz> <http://example.org/studiedAt> <http://example.org/wd_Q154561> .
+<http://example.org/Cambridge> <http://example.org/steer> <http://example.org/Newton> .
+<http://example.org/Newton> <http://example.org/sit> <http://example.org/James_II> .
+<http://example.org/wd_Q131262> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Galileo> <http://example.org/memberOf> <http://example.org/January_8__1642> .
+<http://example.org/Plato> <http://example.org/diedIn> <http://example.org/wd_Q1524> .
+<http://example.org/1944> <http://example.org/workedAt> <http://example.org/Alvarez> .
+<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Jean> .
+<http://example.org/wd_Q969370> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolaus Copernicus" .
+<http://example.org/Leibniz> <http://example.org/knownFor> <http://example.org/wd_Q7754> .
+<http://example.org/1990> <http://example.org/workedAt> <http://example.org/Luis_Alvarez_s> .
+<http://example.org/Luis> <http://example.org/begin> <http://example.org/Madison_School> .
+<http://example.org/Copernicus> <http://example.org/birthDate> "1473-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/wd_Q69539> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
+<http://example.org/335_BC> <http://example.org/think> <http://example.org/Alexander> .
+<http://example.org/c__1590_1671> <http://example.org/workedAt> <http://example.org/Siena> .
+<http://example.org/wd_Q74263> <http://www.w3.org/2000/01/rdf-schema#label> "Isaac Newton" .
+<http://example.org/Geraldine_Smithwick> <http://example.org/survive> <http://example.org/Donald> .
+<http://example.org/Luis_Alvarez> <http://example.org/knownFor> <http://example.org/wd_Q840924> .
+<http://example.org/1953> <http://example.org/collaboratedWith> <http://example.org/Alvarez> .
+<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/Thomas_Aquinas> .
+<http://example.org/Janet_Landis> <http://example.org/survive> <http://example.org/Helen> .
+<http://example.org/two_years> <http://example.org/workedAt> <http://example.org/Luis_Alvarez_s> .
+<http://example.org/1932> <http://example.org/studiedAt> <http://example.org/1934> .
+<http://example.org/Chicago> <http://example.org/studiedAt> <http://example.org/1934> .
+<http://example.org/Newton> <http://example.org/studiedAt> <http://example.org/Cambridge> .
+<http://example.org/1615> <http://example.org/turn> <http://example.org/Inquisition> .
+<http://example.org/wd_Q193093> <http://www.w3.org/2000/01/rdf-schema#label> "Aristotle" .
+<http://example.org/Robert_Hooke> <http://example.org/knownFor> <http://example.org/wd_Q15631401> .
+<http://example.org/Luis_Walter_Alvarez> <http://example.org/bornIn> <http://example.org/San_Francisco> .
+<http://example.org/John_Locke> <http://example.org/birthDate> "1632-09-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/Newton> <http://example.org/collaboratedWith> <http://example.org/Catherine> .
+<http://example.org/Vatican> <http://example.org/note> <http://example.org/Inquisition> .
+<http://example.org/Aristotle> <http://example.org/influencedBy> <http://example.org/the_European_Renaissance> .
+<http://example.org/Rochester_High_School> <http://example.org/studiedAt> <http://example.org/1928> .
+<http://example.org/Rome> <http://example.org/interrupt> <http://example.org/Galileo> .
+<http://example.org/Isaac_Barrow> <http://example.org/steer> <http://example.org/Cambridge> .
+<http://example.org/Rome> <http://example.org/turn> <http://example.org/Inquisition> .
+<http://example.org/six_months> <http://example.org/workedAt> <http://example.org/Siena> .
+<http://example.org/Isaac_Barrow> <http://example.org/steer> <http://example.org/the_day> .
+<http://example.org/Newton> <http://example.org/steer> <http://example.org/the_day> .
+<http://example.org/the_Royal_Mint> <http://example.org/knownFor> <http://example.org/Newton> .
+<http://example.org/Isaac_Newton> <http://example.org/authorOf> <http://example.org/wd_Q74263> .
+<http://example.org/Luis_Alvarez> <http://example.org/workedAt> <http://example.org/wd_Q3138607> .
+<http://example.org/Leibniz> <http://example.org/knownFor> <http://example.org/many_years> .
+<http://example.org/Alvarez> <http://example.org/authorOf> <http://example.org/Geiger> .
+<http://example.org/Aristotle> <http://example.org/crumble> <http://example.org/Stagira__Macedonia> .
+<http://example.org/Galileo> <http://example.org/lodge> <http://example.org/Rome> .
+<http://example.org/Royal_Society> <http://example.org/din> <http://example.org/William_Stukeley> .
