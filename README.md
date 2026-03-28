@@ -1,4 +1,4 @@
-# science-knowledge-graph
+# Scientists & Discoveries Knowledge Graph
 
 A full Knowledge Graph pipeline applied to famous scientists — from web crawling to RAG-powered SPARQL querying.
 
@@ -17,7 +17,7 @@ This project builds a private Knowledge Graph (KG) about famous scientists using
 5. **SPARQL Expansion** — enrich KB by querying Wikidata
 6. **Reasoning** — SWRL rules with OWLReady2
 7. **KGE** — Knowledge Graph Embeddings (TransE, RotatE via PyKEEN)
-8. **RAG** — Natural Language → SPARQL with self-repair (Ollama + llama3.2)
+8. **RAG** — Natural Language to SPARQL with self-repair (Ollama + llama3.2)
 
 ---
 
@@ -29,7 +29,7 @@ science-knowledge-graph/
 │   ├── crawl/
 │   │   └── crawler.py                  # Web scraper (trafilatura)
 │   ├── ie/
-│   │   ├── extract_entities.py         # NER with spaCy (en_core_web_trf)
+│   │   ├── extract_entities.py         # NER with spaCy (en_core_web_sm)
 │   │   ├── extract_relations.py        # Subject-verb-object extraction
 │   │   └── clean_relations.py          # Relation filtering
 │   ├── kg/
@@ -41,41 +41,41 @@ science-knowledge-graph/
 │   ├── kge/
 │   │   └── train_kge.py                # KGE training (PyKEEN)
 │   └── rag/
-│       └── rag_pipeline.py             # NL→SPARQL + self-repair (Ollama)
+│       └── rag_pipeline.py             # NL to SPARQL + self-repair (Ollama)
 ├── data/
 │   ├── crawler_output.jsonl
 │   ├── extracted_knowledge.csv
 │   ├── extracted_relations.csv
-│   ├── extracted_relations_cleaned.csv
+│   └── extracted_relations_cleaned.csv
 ├── kg_artifacts/
 │   ├── ontology.ttl                    # OWL ontology (6 classes, 13 properties)
-│   ├── graph.nt                        # Initial RDF graph (330 triples)
-│   ├── alignment.ttl                   # Entity linking to Wikidata (25 entities)
+│   ├── graph.nt                        # Initial RDF graph (25,028 triples)
+│   ├── alignment.ttl                   # Entity linking to Wikidata (21 entities)
 │   ├── aligned_kb.nt                   # KB with aligned predicates
-│   ├── expanded.nt                     # KB after Wikidata expansion (478 triples)
-│   ├── expanded_reasoned.nt            # KB after SWRL inference (499 triples)
+│   ├── expanded.nt                     # KB after Wikidata expansion (24,656 triples)
+│   ├── expanded_reasoned.nt            # KB after SWRL inference (24,951 triples)
 │   ├── alignment_report.txt            # Predicate alignment log
 │   ├── expansion_report.txt            # Wikidata expansion log
 │   └── rag_evaluation.json             # RAG evaluation results
 ├── kge_datasets/
-|   ├── RotatE/
-│   |   ├── training_triples/
-│   |   ├── metadata.json
-│   |   ├── results.json
-│   |   └── trained_model.pkl
-|   ├── TransE/
-│   |   ├── training_triples/
-│   |   ├── metadata.json
-│   |   ├── results.json
-│   |   └── trained_model.pkl
-|   ├── comparison_report.txt
-|   ├── results_RotatE.json
-|   ├── results_TransE.json
-|   ├── test.txt
-|   ├── train.txt
-|   ├── tsne_RotatE.png
-|   ├── tsne_TransE.png
-|   └── valid.txt
+│   ├── RotatE/
+│   │   ├── training_triples/
+│   │   ├── metadata.json
+│   │   ├── results.json
+│   │   └── trained_model.pkl
+│   ├── TransE/
+│   │   ├── training_triples/
+│   │   ├── metadata.json
+│   │   ├── results.json
+│   │   └── trained_model.pkl
+│   ├── comparison_report.txt
+│   ├── results_RotatE.json
+│   ├── results_TransE.json
+│   ├── test.txt
+│   ├── train.txt
+│   ├── tsne_RotatE.png
+│   ├── tsne_TransE.png
+│   └── valid.txt
 ├── reports/
 │   └── final_report.pdf
 ├── README.md
@@ -99,7 +99,7 @@ science-knowledge-graph/
 git clone https://github.com/<your-username>/science-knowledge-graph.git
 cd science-knowledge-graph
 pip install -r requirements.txt
-python -m spacy download en_core_web_trf
+python -m spacy download en_core_web_sm
 ```
 
 ### Ollama setup
@@ -161,14 +161,15 @@ python src/kge/train_kge.py
 # Output: kge_datasets/ (splits, models, t-SNE plots, metrics)
 ```
 
-### 6. RAG Demo (NL → SPARQL)
+### 6. RAG Demo (NL to SPARQL)
 
 ```bash
 # Ollama runs automatically in the background after install
+
 # Interactive mode:
 python src/rag/rag_pipeline.py
 
-# Evaluation mode (5 questions, baseline vs RAG):
+# Evaluation mode (10 questions, baseline vs RAG):
 python src/rag/rag_pipeline.py eval
 ```
 
@@ -188,7 +189,7 @@ SELECT ?place WHERE { ex:Galileo ex:bornIn ?place }
 Answer: Pisa
 ```
 
-RAG evaluation score: **4/5** questions correctly answered.
+RAG evaluation score: **8/10** questions correctly answered.
 
 ---
 
@@ -196,16 +197,16 @@ RAG evaluation score: **4/5** questions correctly answered.
 
 | Metric | Value |
 |---|---|
-| Source pages crawled | 4 |
-| Entities extracted | 241 |
-| Relations (raw) | 408 |
-| Relations (cleaned) | 330 |
-| RDF triples — initial | 330 |
-| RDF triples — after alignment | 307 |
-| RDF triples — after Wikidata expansion | 478 |
-| RDF triples — after SWRL reasoning | 499 |
-| Entities linked to Wikidata | 25 |
-| KGE train / valid / test | 323 / 30 / 32 |
+| Source pages crawled | 16 |
+| Entities extracted | 11,435 |
+| Relations (raw) | 27,227 |
+| Relations (cleaned) | 25,273 |
+| RDF triples — initial | 25,028 |
+| RDF triples — after alignment | 24,467 |
+| RDF triples — after Wikidata expansion | 24,656 |
+| RDF triples — after SWRL reasoning | 24,951 |
+| Entities linked to Wikidata | 21 |
+| KGE train / valid / test | 19,572 / 2,354 / 2,355 |
 
 ---
 
