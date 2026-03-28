@@ -47,7 +47,6 @@ science-knowledge-graph/
 │   ├── extracted_knowledge.csv
 │   ├── extracted_relations.csv
 │   ├── extracted_relations_cleaned.csv
-│   └── README.md
 ├── kg_artifacts/
 │   ├── ontology.ttl                    # OWL ontology (6 classes, 13 properties)
 │   ├── graph.nt                        # Initial RDF graph (330 triples)
@@ -59,17 +58,26 @@ science-knowledge-graph/
 │   ├── expansion_report.txt            # Wikidata expansion log
 │   └── rag_evaluation.json             # RAG evaluation results
 ├── kge_datasets/
-│   ├── train.txt                       # 323 triples
-│   ├── valid.txt                       # 30 triples
-│   ├── test.txt                        # 32 triples
-│   ├── results_TransE.json
-│   ├── results_RotatE.json
-│   ├── tsne_TransE.png
-│   ├── tsne_RotatE.png
-│   └── comparison_report.txt
+|   ├── RotatE/
+│   |   ├── training_triples/
+│   |   ├── metadata.json
+│   |   ├── results.json
+│   |   └── trained_model.pkl
+|   ├── TransE/
+│   |   ├── training_triples/
+│   |   ├── metadata.json
+│   |   ├── results.json
+│   |   └── trained_model.pkl
+|   ├── comparison_report.txt
+|   ├── results_RotatE.json
+|   ├── results_TransE.json
+|   ├── test.txt
+|   ├── train.txt
+|   ├── tsne_RotatE.png
+|   ├── tsne_TransE.png
+|   └── valid.txt
 ├── reports/
 │   └── final_report.pdf
-├── notebooks/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
