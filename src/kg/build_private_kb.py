@@ -1,61 +1,122 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "5ba064a7",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Requirement already satisfied: rdflib in c:\\users\\mayli\\anaconda3\\lib\\site-packages (7.5.0)\n",
-      "Requirement already satisfied: pyparsing<4,>=2.1.0 in c:\\users\\mayli\\anaconda3\\lib\\site-packages (from rdflib) (3.2.0)\n",
-      "Note: you may need to restart the kernel to use updated packages.\n"
-     ]
-    }
-   ],
-   "source": [
-    "pip install rdflib"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "3c6dc830",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "04004266",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "base",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.5"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+"""
+build_private_kb.py
+--------------------
+Builds the private RDF graph from extracted and cleaned relations.
+
+Reads  : data/extracted_relations_cleaned.csv
+Writes : kg_artifacts/graph.nt
+
+Usage (from project root):
+    python src/kg/build_private_kb.py
+
+Dependencies:
+    pip install rdflib pandas
+"""
+
+import pandas as pd
+import re
+from rdflib import Graph, Namespace
+from pathlib import Path
+
+# ── Paths ────────────────────────────────────────────────────
+INPUT_FILE  = "data/extracted_relations_cleaned.csv"
+OUTPUT_FILE = "kg_artifacts/graph.nt"
+
+# ── Namespace ────────────────────────────────────────────────
+EX = Namespace("http://example.org/")
+
+
+# ── Utilities ────────────────────────────────────────────────
+
+def uri_safe(text: str) -> str:
+    """Convert text into a safe URI fragment."""
+    text = str(text).strip()
+
+    # Remove unicode / accents
+    text = text.encode("ascii", "ignore").decode()
+
+    # Replace non-alphanumeric characters
+    text = re.sub(r"[^a-zA-Z0-9_]", "_", text)
+
+    # Remove duplicate underscores
+    text = re.sub(r"_+", "_", text)
+
+    return text.strip("_")
+
+
+def is_valid(text: str) -> bool:
+    """Basic validation for entity/predicate."""
+    return text and text.lower() != "nan" and len(text.strip()) > 0
+
+
+# ── Main builder ─────────────────────────────────────────────
+
+def build_graph(input_path: str, output_path: str):
+    df = pd.read_csv(input_path, encoding="utf-8")
+
+    print(f"Relations loaded : {len(df)}")
+    print(f"Columns          : {list(df.columns)}")
+
+    g = Graph()
+    g.bind("ex", EX)
+
+    added = 0
+    skipped = 0
+    errors = 0
+
+    for _, row in df.iterrows():
+        subject   = str(row.get("subject", "")).strip()
+        predicate = str(row.get("predicate", "")).strip()
+        obj       = str(row.get("object", "")).strip()
+
+        # Validation
+        if not (is_valid(subject) and is_valid(predicate) and is_valid(obj)):
+            skipped += 1
+            continue
+
+        try:
+            # URI construction
+            s = EX[uri_safe(subject)]
+            p = EX[uri_safe(predicate)]
+            o = EX[uri_safe(obj)]
+
+            # Add triple
+            g.add((s, p, o))
+            added += 1
+
+        except Exception:
+            errors += 1
+            continue
+
+    # Save graph
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    g.serialize(output_path, format="nt")
+
+    # Logs
+    print("\nGraph construction complete:")
+    print(f"  Triples added   : {added}")
+    print(f"  Rows skipped    : {skipped}")
+    print(f"  Errors          : {errors}")
+    print(f"  File created    : {output_path}")
+
+    # Statistics
+    entities = set()
+    predicates = set()
+
+    for s, p, o in g:
+        entities.add(str(s))
+        entities.add(str(o))
+        predicates.add(str(p))
+
+    print("\nKB Statistics:")
+    print(f"  Unique entities   : {len(entities)}")
+    print(f"  Unique predicates : {len(predicates)}")
+    print(f"  Total triples     : {len(g)}")
+
+    return g
+
+
+# ── Entry point ──────────────────────────────────────────────
+
+if __name__ == "__main__":
+    build_graph(INPUT_FILE, OUTPUT_FILE)

@@ -1,10 +1,10 @@
 {
   "model": "TransE",
   "config": {
-    "embedding_dim": 50,
-    "epochs": 100,
-    "batch_size": 16,
-    "lr": 0.01
+    "embedding_dim": 100,
+    "epochs": 300,
+    "batch_size": 32,
+    "lr": 0.001
   },
   "metrics": {
     "MRR": 0,
@@ -13,10 +13,10 @@
     "Hits@10": 0
   },
   "dataset": {
-    "entities": 208,
-    "relations": 52,
-    "train": 323,
-    "valid": 28,
-    "test": 31
+    "entities": 4911,
+    "relations": 594,
+    "train": 19572,
+    "valid": 2354,
+    "test": 2355
   }
 }

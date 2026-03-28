@@ -1,9 +1,9 @@
 
 === Expansion Summary ===
-Initial triples   : 303
-Triples added     : 98
-Final triples     : 474
-Entities enriched : 19
+Initial triples   : 24467
+Triples added     : 108
+Final triples     : 24656
+Entities enriched : 20
 Output file       : kg_artifacts/expanded.nt
 
 === Aristotle (wd:Q868) ===
@@ -22,9 +22,9 @@ Output file       : kg_artifacts/expanded.nt
   + deathDate: -0348-01-01T00:00:00Z
   + birthPlace: http://www.wikidata.org/entity/Q1524
   + deathPlace: http://www.wikidata.org/entity/Q1524
-  + fieldOfWork: http://www.wikidata.org/entity/Q316
+  + fieldOfWork: http://www.wikidata.org/entity/Q491
   + influencedBy: http://www.wikidata.org/entity/Q913
-  + notableWork: http://www.wikidata.org/entity/Q123397
+  + notableWork: http://www.wikidata.org/entity/Q220972
   → 7 triples added
 
 === Socrates (wd:Q913) ===
@@ -81,8 +81,8 @@ Output file       : kg_artifacts/expanded.nt
   + deathPlace: http://www.wikidata.org/entity/Q497115
   + studiedAt: http://www.wikidata.org/entity/Q131262
   + workedAt: http://www.wikidata.org/entity/Q189441
-  + fieldOfWork: http://www.wikidata.org/entity/Q395
-  + influencedBy: http://www.wikidata.org/entity/Q969370
+  + fieldOfWork: http://www.wikidata.org/entity/Q333
+  + influencedBy: http://www.wikidata.org/entity/Q868
   + notableWork: http://www.wikidata.org/entity/Q675765
   + award: http://www.wikidata.org/entity/Q99951011
   → 10 triples added
@@ -107,7 +107,7 @@ Output file       : kg_artifacts/expanded.nt
   + studiedAt: http://www.wikidata.org/entity/Q154561
   + workedAt: http://www.wikidata.org/entity/Q154804
   + fieldOfWork: http://www.wikidata.org/entity/Q7754
-  + influencedBy: http://www.wikidata.org/entity/Q36330
+  + influencedBy: http://www.wikidata.org/entity/Q859
   + notableWork: http://www.wikidata.org/entity/Q150008
   + award: http://www.wikidata.org/entity/Q15631401
   → 10 triples added
@@ -126,11 +126,24 @@ Output file       : kg_artifacts/expanded.nt
   + birthPlace: http://www.wikidata.org/entity/Q1825419
   + deathPlace: http://www.wikidata.org/entity/Q2233631
   + studiedAt: http://www.wikidata.org/entity/Q745967
-  + workedAt: http://www.wikidata.org/entity/Q34433
+  + workedAt: http://www.wikidata.org/entity/Q5019214
   + fieldOfWork: http://www.wikidata.org/entity/Q5891
-  + influencedBy: http://www.wikidata.org/entity/Q9191
+  + influencedBy: http://www.wikidata.org/entity/Q336002
   + notableWork: http://www.wikidata.org/entity/Q231949
   + award: http://www.wikidata.org/entity/Q15631401
+  → 10 triples added
+
+=== Albert_Einstein (wd:Q937) ===
+  + birthDate: 1879-03-14T00:00:00Z
+  + deathDate: 1955-04-18T00:00:00Z
+  + birthPlace: http://www.wikidata.org/entity/Q3012
+  + deathPlace: http://www.wikidata.org/entity/Q138518
+  + studiedAt: http://www.wikidata.org/entity/Q11942
+  + workedAt: http://www.wikidata.org/entity/Q659080
+  + fieldOfWork: http://www.wikidata.org/entity/Q18362
+  + influencedBy: http://www.wikidata.org/entity/Q991
+  + notableWork: http://www.wikidata.org/entity/Q944
+  + award: http://www.wikidata.org/entity/Q28003
   → 10 triples added
 
 === Florence (wd:Q2044) ===

@@ -3,18 +3,57 @@ import trafilatura
 import json
 
 urls = [
+    # Alvarez
     "https://www.famousscientists.org/luis-alvarez/",
+    "https://en.wikipedia.org/wiki/Luis_Walter_Alvarez",
+
+    # Aristotle
     "https://biographyonline.net/scientists/aristotle.html",
-    "https://www.bbc.co.uk/teach/articles/zh8792p",
-    "https://www.britannica.com/biography/Galileo-Galilei/Galileos-Copernicanism",
+    "https://en.wikipedia.org/wiki/Aristotle",
+
+    # Galileo
+    "https://www.britannica.com/biography/Galileo-Galilei",
+    "https://en.wikipedia.org/wiki/Galileo_Galilei",
+
+    # Newton
+    "https://en.wikipedia.org/wiki/Isaac_Newton",
+    "https://www.britannica.com/biography/Isaac-Newton",
+
+    # Einstein
+    "https://en.wikipedia.org/wiki/Albert_Einstein",
+    "https://www.britannica.com/biography/Albert-Einstein",
+
+    # Fermi
+    "https://en.wikipedia.org/wiki/Enrico_Fermi",
+    "https://www.britannica.com/biography/Enrico-Fermi",
+
+    # Plato / Socrates
+    "https://en.wikipedia.org/wiki/Plato",
+    "https://en.wikipedia.org/wiki/Socrates",
+
+    # Curie
+    "https://en.wikipedia.org/wiki/Marie_Curie",
+    "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+
+    # Darwin
+    "https://en.wikipedia.org/wiki/Charles_Darwin",
+    "https://www.britannica.com/biography/Charles-Darwin",
+
+    # Copernicus
+    "https://en.wikipedia.org/wiki/Nicolaus_Copernicus",
+    "https://www.britannica.com/biography/Nicolaus-Copernicus",
 ]
 
-OUTPUT_FILE = "crawler_output.jsonl"
+OUTPUT_FILE = "data/crawler_output.jsonl"
 MIN_WORDS = 500
 
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; ScienceKGBot/1.0; student research project)"
+}
+
 def extract_text_from_url(url):
-    response = requests.get(url, timeout=15)
+    response = requests.get(url, timeout=15, headers=HEADERS)
     html = response.text
 
     text = trafilatura.extract(
@@ -22,7 +61,6 @@ def extract_text_from_url(url):
         include_comments=False,
         include_tables=False
     )
-
     return text
 
 
@@ -41,14 +79,14 @@ if __name__ == "__main__":
             text = extract_text_from_url(url)
 
             if text is None:
-                print("Aucun texte extrait")
+                print("No text extracted")
                 continue
 
             wc = word_count(text)
-            print(f"Nombre de mots: {wc}")
+            print(f"Word count: {wc}")
 
             if wc < MIN_WORDS:
-                print("Page ignorée (trop courte)")
+                print("Page skipped (too short)")
                 continue
 
             data = {
@@ -60,7 +98,7 @@ if __name__ == "__main__":
             f.write(json.dumps(data, ensure_ascii=False) + "\n")
             kept_pages += 1
 
-            print("Page sauvegardée")
+            print("Page saved")
 
-    print("\n================ RÉSUMÉ ================")
-    print(f"Pages sauvegardées: {kept_pages}")
+    print("\n================ SUMMARY ================")
+    print(f"Pages saved: {kept_pages}")

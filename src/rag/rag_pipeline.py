@@ -135,9 +135,10 @@ Available predicates:
   ex:indirectlyInfluencedBy
   ex:sharedInstitution
 
-Key entities (copy exact spelling including capital letters):
-  ex:Galileo, ex:Newton, ex:Isaac_Newton, ex:Aristotle, ex:Plato, ex:Socrates
+Key entities (use EXACT spelling, always full names):
+  ex:Galileo, ex:Isaac_Newton, ex:Aristotle, ex:Plato, ex:Socrates
   ex:Copernicus, ex:Leibniz, ex:Robert_Hooke, ex:John_Locke, ex:Luis_Alvarez
+  ex:Albert_Einstein, ex:Marie_Curie, ex:Charles_Darwin, ex:Enrico_Fermi
   ex:Florence, ex:Athens, ex:Rome, ex:Cambridge, ex:Royal_Society
 
 STRICT RULES:
@@ -155,6 +156,9 @@ STRICT RULES:
 4. Only use predicates listed above.
 5. Keep queries simple (one or two triple patterns maximum).
 6. Return ONLY the SPARQL query.
+7. Always use full name URIs: ex:Albert_Einstein (NOT ex:Einstein),
+   ex:Isaac_Newton (NOT ex:Newton), ex:Marie_Curie (NOT ex:Curie),
+   ex:Charles_Darwin (NOT ex:Darwin).
 
 Examples:
 
@@ -357,14 +361,24 @@ EVAL_QUESTIONS = [
     "Where did Newton study?",
     "What is Galileo known for?",
     "Which scientists shared the same institution?",
+    "Where was Copernicus born?",
+    "Where was Einstein born?",
+    "Where was Marie Curie born?",
+    "What is Newton known for?",
+    "What is Luis Alvarez known for?",
 ]
 
 BASELINE = {
     "Where was Galileo born?"                       : ["pisa", "florence"],
-    "Who influenced Aristotle?"                     : ["plato", "socrates"],
+    "Who influenced Aristotle?"                     : ["plato", "socrates", "renaissance"],
     "Where did Newton study?"                       : ["cambridge"],
     "What is Galileo known for?"                    : ["astronomy", "physics", "dialogue"],
-    "Which scientists shared the same institution?" : ["locke", "hooke", "newton"],
+    "Which scientists shared the same institution?" : ["locke", "hooke", "newton", "copernicus"],
+    "Where was Copernicus born?"                    : ["poland", "torun", "silesia", "natio"],
+    "Where was Einstein born?"                      : ["ulm", "germany", "wurttemberg"],
+    "Where was Marie Curie born?"                   : ["poland", "warsaw"],
+    "What is Newton known for?"                     : ["astronomy", "principia", "frs", "gravity"],
+    "What is Luis Alvarez known for?"               : ["engineering", "nobel", "physics", "cosmic"],
 }
 
 

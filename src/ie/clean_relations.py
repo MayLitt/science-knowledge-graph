@@ -1,7 +1,7 @@
 import pandas as pd
 
-INPUT_FILE = "extracted_relations.csv"
-OUTPUT_FILE = "extracted_relations_cleaned.csv"
+INPUT_FILE = "data/extracted_relations.csv"
+OUTPUT_FILE = "data/extracted_relations_cleaned.csv"
 
 GENERIC_VERBS = {
     "be", "have", "do", "make", "use", "say"

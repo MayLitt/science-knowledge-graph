@@ -1,24 +1,21 @@
 
-=== Rapport de comparaison KGE ===
+=== KGE Comparison Report ===
 
 Dataset
-  Triplets total  : 404
-  Train           : 323
-  Valid           : 30
-  Test            : 32
+  Source KB      : kg_artifacts/aligned_kb.nt
+  Total triples  : 24466
+  Train          : 19572
+  Valid          : 2356
+  Test           : 2361
 
 Configuration
-  Embedding dim   : 50
-  Epochs          : 100
-  Batch size      : 16
-  Learning rate   : 0.01
+  Embedding dim  : 100
+  Epochs         : 300
+  Batch size     : 32
+  Learning rate  : 0.001
 
-Résultats
-  Modèle       MRR      Hits@1   Hits@3   Hits@10
-  ───────────────────────────────────────────────────────
-  TransE       0.0000   0.0000   0.0000   0.0000
-  RotatE       0.0000   0.0000   0.0000   0.0000
-
-Note : KB de petite taille (404 triplets vs 50k-200k recommandés).
-Les métriques sont instables et doivent être interprétées avec précaution.
-Ce résultat est discuté dans la section Critical Reflection du rapport.
+Results
+  Model      MRR      Hits@1   Hits@3   Hits@10
+  -------------------------------------------------------
+  TransE     0.0000   0.0000   0.0000   0.0000
+  RotatE     0.0000   0.0000   0.0000   0.0000

@@ -88,6 +88,9 @@ ex:John_Locke
     owl:sameAs dbo:John_Locke ;
     rdfs:label "John Locke" .
 
+ex:Albert_Einstein owl:sameAs wd:Q937 .
+ex:Einstein owl:sameAs wd:Q937 .
+
 # ─────────────────────────────────────────
 #  Places (GPE)
 # ─────────────────────────────────────────

@@ -2,8 +2,8 @@ import json
 import spacy
 import pandas as pd
 
-INPUT_FILE = "crawler_output.jsonl"
-OUTPUT_FILE = "extracted_knowledge.csv"
+INPUT_FILE = "data/crawler_output.jsonl"
+OUTPUT_FILE = "data/extracted_knowledge.csv"
 
 # Entity types to keep
 ALLOWED_LABELS = {"PERSON", "ORG", "GPE", "DATE"}
@@ -33,7 +33,7 @@ def extract_entities(text, nlp):
 
 if __name__ == "__main__":
     print("Loading spaCy model (this may take a moment)...")
-    nlp = spacy.load("en_core_web_trf")
+    nlp = spacy.load("en_core_web_sm")
 
     documents = load_documents(INPUT_FILE)
 

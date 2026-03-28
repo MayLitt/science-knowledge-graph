@@ -2,8 +2,8 @@ import json
 import spacy
 import pandas as pd
 
-INPUT_FILE = "crawler_output.jsonl"
-OUTPUT_FILE = "extracted_relations.csv"
+INPUT_FILE = "data/crawler_output.jsonl"
+OUTPUT_FILE = "data/extracted_relations.csv"
 
 ALLOWED_LABELS = {"PERSON", "ORG", "GPE", "DATE"}
 
@@ -16,7 +16,7 @@ def load_documents(jsonl_file):
 
 if __name__ == "__main__":
     print("Loading spaCy model...")
-    nlp = spacy.load("en_core_web_trf")
+    nlp = spacy.load("en_core_web_sm")
 
     rows = []
 

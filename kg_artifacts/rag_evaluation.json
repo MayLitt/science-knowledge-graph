@@ -14,9 +14,10 @@
     "question": "Who influenced Aristotle?",
     "expected": [
       "plato",
-      "socrates"
+      "socrates",
+      "renaissance"
     ],
-    "got": "the European Renaissance, Isaac Newton, the medieval period, Thomas Aquinas, Plato",
+    "got": "Thomas Aquinas, Plato, the European Renaissance, Isaac Newton",
     "match": true,
     "attempts": 1,
     "repaired": false
@@ -38,7 +39,7 @@
       "physics",
       "dialogue"
     ],
-    "got": "astronomy, Galileo Medal",
+    "got": "Galileo Medal, astronomy",
     "match": true,
     "attempts": 1,
     "repaired": false
@@ -48,10 +49,73 @@
     "expected": [
       "locke",
       "hooke",
-      "newton"
+      "newton",
+      "copernicus"
     ],
-    "got": "Rochester High School | Luis, 1932 | 1934, Chicago | 1934, Bachelor of Science | Rochester High School, the University of Chicago | Rochester High School",
+    "got": "the State University of Leiden | Developed Fermi Dirac, B S | Developed Fermi Dirac, Chicago | Developed Fermi Dirac, 1927 | Developed Fermi Dirac, the University of Rome 1929 | Developed Fermi Dirac",
     "match": false,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "Where was Copernicus born?",
+    "expected": [
+      "poland",
+      "torun",
+      "silesia",
+      "natio"
+    ],
+    "got": "Philolaus, Moon, Krakw, c 1350, Sun",
+    "match": false,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "Where was Einstein born?",
+    "expected": [
+      "ulm",
+      "germany",
+      "wurttemberg"
+    ],
+    "got": "Wrttemberg, March 14 1879, Germany, Ulm, New Jersey",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "Where was Marie Curie born?",
+    "expected": [
+      "poland",
+      "warsaw"
+    ],
+    "got": "November 7 1867, Maria Sklodowska, Warsaw",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "What is Newton known for?",
+    "expected": [
+      "astronomy",
+      "principia",
+      "frs",
+      "gravity"
+    ],
+    "got": "astronomy, FRS Medal",
+    "match": true,
+    "attempts": 1,
+    "repaired": false
+  },
+  {
+    "question": "What is Luis Alvarez known for?",
+    "expected": [
+      "engineering",
+      "nobel",
+      "physics",
+      "cosmic"
+    ],
+    "got": "engineering, Nobel Prize in Physics",
+    "match": true,
     "attempts": 1,
     "repaired": false
   }
