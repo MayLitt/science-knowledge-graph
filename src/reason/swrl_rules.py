@@ -21,7 +21,7 @@ from owlready2 import (
 
 # ============================================================
 # PART 1 — family.owl
-# Rule: Person(?p) ∧ hasSibling(?p,?s) ∧ Man(?s) → hasBrother(?p,?s)
+# Rule: Person(p) ∧ hasSibling(p,s) ∧ Man(s) → hasBrother(p,s)
 # ============================================================
 
 def run_family_rules():
